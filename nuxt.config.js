@@ -6,20 +6,37 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - blog',
-    title: 'blog',
+    //titleTemplate: '%s - nuxt-app',
+    target: 'static',
+    buildDir: 'nuxt-docs',
+
+    title: 'mitorie',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'ja',
+      prefix: 'og: http://ogp.me/ns#'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
-      { name: 'format-detection', content: 'telephone=no' }
+      //{ name: 'format-detection', content: 'telephone=no' },
+      { hid: 'og:title',      property: 'og:title',      content: 'mitorie' },
+      { hid: 'og:site_name',  property: 'og:site_name',  content: 'mitorie' },
+      { hid: 'og:description',property: 'og:description',content: "mitori's blog",},
+      { hid: 'og:url',        property: 'og:url',        content: 'https://blog.mitori.art/',},
+      { hid: 'og:type',       property: 'og:type',       content: 'website',},
+      { hid: 'og:image',      property: 'og:image',      content: '~assets/cover.jpg',},
+      { hid: 'og:twitter',                               content: 'summary' },
     ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+  },
+
+  router:{
+    base: '/'
+  },
+
+  generate: {
+    dir: 'docs',
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css

@@ -1,19 +1,23 @@
-module.exports = {
-  root: true,
-  env: {
-    browser: true,
-    node: true
-  },
-  parserOptions: {
-    parser: '@babel/eslint-parser',
-    requireConfigFile: false
-  },
-  extends: [
-    '@nuxtjs',
-    'plugin:nuxt/recommended'
-  ],
-  plugins: [
-  ],
-  // add your custom rules here
-  rules: {}
+module.export = {
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:vue/base",
+        "plugin:vue/essential",
+        "plugin:@typescript-eslint/recommended"
+    ],
+    "parserOptions": {
+        "parser": "babel-eslint",
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "plugins": [
+        "vue",
+        "@typescript-eslint"
+    ],
+    "rules": {
+    }
 }

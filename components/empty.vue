@@ -5,16 +5,6 @@
 
 <script>
 export default{
-    head() {
-    return {
-      meta: [
-        { hid: 'og:title', property: 'og:title', content: '' },
-        { hid: 'og:description', property: 'og:description', content: '' },
-        { hid: 'og:url', property: 'og:url', content: '' },
-        { hid: 'og:image', property: 'og:image', content: '' },
-      ]
-    }
-  },
   data: () => ({
     windowWidth: window.innerWidth,
     windowHeight: window.innerHeight,
@@ -28,6 +18,16 @@ export default{
       this.windowWidth = window.innerWidth
       this.windowHeight = window.innerHeight
     },
+  },
+  head() {
+    return {
+      meta: [
+        { hid: 'og:title', property: 'og:title', content: '' },
+        { hid: 'og:description', property: 'og:description', content: '' },
+        { hid: 'og:url', property: 'og:url', content: '' },
+        { hid: 'og:image', property: 'og:image', content: '' },
+      ]
+    }
   },
 }
 </script>

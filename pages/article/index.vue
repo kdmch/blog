@@ -21,11 +21,11 @@
 export default{
   head() {
     return {
-      meta: [
+      meta: [ /*
         { hid: 'og:title', property: 'og:title', content: '' },
         { hid: 'og:description', property: 'og:description', content: '' },
         { hid: 'og:url', property: 'og:url', content: '' },
-        { hid: 'og:image', property: 'og:image', content: '' },
+        { hid: 'og:image', property: 'og:image', content: '' }, */
       ]
     }
   },

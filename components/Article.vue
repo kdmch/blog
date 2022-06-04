@@ -69,7 +69,7 @@
 </template>
 
 <script>
-export default{
+export default {
   data: () => {
     return {
       title: 'テスト記事ですああああああああああああああああああああああああ',
@@ -81,14 +81,14 @@ export default{
         no: 1,
         title: 'いろいろ',
         caption: 'なんで？',
-      },{
+      }, {
         no: 2,
         title: 'いろいろ2',
         caption: 'なんで？2ああああああああああああああ',
       }],
-    };
+    }
   }
-};
+}
 </script>
 
 <style scoped lang="scss">
