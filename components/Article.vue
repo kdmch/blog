@@ -24,7 +24,7 @@
           </div>
         </div>
 
-        <div id="text"> <LogsD2022060800 /> </div>
+        <div id="text"> <LogsD2022060600 /> </div>
 
         <div id="sharebelow">
           <div id="sharecap"> SHARE! </div>
@@ -41,7 +41,7 @@
               <div id="autherprofile">
                 <div id="authername">
                   {{ auther }}
-                  <v-icon color="#f3abc0" medium> mdi-check-decagram </v-icon>
+                  <v-icon color="#dff2ff" medium> mdi-check-decagram </v-icon>
                 </div>
                 <div id="autherbio"> {{ bio }} </div>
               </div>
@@ -72,19 +72,19 @@
 export default {
   data: () => {
     return {
-      title: 'テスト記事ですああああああああああああああああああああああああ',
-      updated: '2022.05.31',
+      title: '全然できてない！',
+      updated: '2022.06.06',
       tags: ['#テスト', '#test', '#test2'],
       auther: 'mitori',
-      bio: 'うわああああああああああああ',
+      bio: 'まだ考えてない',
       relateds: [{
         no: 1,
         title: 'いろいろ',
-        caption: 'なんで？',
+        caption: 'うん',
       }, {
         no: 2,
         title: 'いろいろ2',
-        caption: 'なんで？2ああああああああああああああ',
+        caption: 'なんで？',
       }],
     }
   }
@@ -109,6 +109,7 @@ export default {
       #head {
         display: flex;
         background-color: $text;
+        justify-content: space-between;
         border-radius: 30px 30px 0px 0px / 30px 30px 0px 0px;
         #title {
           flex-grow: 2;
@@ -117,6 +118,7 @@ export default {
           font-size: 4vh;
           font-family: 'Dela Gothic One', cursive;
           line-height: 90%;
+          max-width: 900px;
           //text-shadow: 0px 0px 40px #ffffffaa;
         }
         #date {
@@ -180,7 +182,7 @@ export default {
         justify-content: right;
         gap: 12px;
         #sharecap {
-          color: $accent;
+          color: $deep;
           margin-right: 8px;
           font-size: larger;
           font-style: italic;
@@ -243,19 +245,25 @@ export default {
   }
   .rarticlewrap {
     display: flex;
+    min-width: 400px;
     height: 80px;
+    border: 2px solid $base;
+    border-radius: 20px;
     .rarticleimg {
       background-size: contain;
       width: 80px;
       height: 80px;
+      margin-top: -2px;
+      margin-left: -2px;
       border-radius: 20px;
     }
     .rarticledetail {
+      font-family: sans-serif;
       margin-left: 12px;
       color: $base;
       .rarticletitle {
         font-size: x-large;
-        font-style: bold;
+        font-weight: bold;
       }
       .rarticletext {
         margin-left: 12px;

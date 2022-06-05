@@ -6,7 +6,7 @@
 
     <div id="main">
       <div id="arti">
-        <Article />
+        <Articles />
       </div>
       <div id="side">
         <Sidebar />
@@ -21,11 +21,11 @@
 export default{
   head() {
     return {
-      meta: [ /*
+      meta: [
         { hid: 'og:title', property: 'og:title', content: '' },
         { hid: 'og:description', property: 'og:description', content: '' },
         { hid: 'og:url', property: 'og:url', content: '' },
-        { hid: 'og:image', property: 'og:image', content: '' }, */
+        { hid: 'og:image', property: 'og:image', content: '' },
       ]
     }
   },
@@ -47,24 +47,24 @@ export default{
 </script>
 
 <style scoped lang="scss">
-  @import "assets/cssvar.scss";
+  $main-bg: #ecfff7;
   #bg {
     position: fixed;
     width: 100%;
     height: 100%;
-    background-color: $accent;
+    background-color: $main-bg;
     background-size: cover;
   }
   #main {
     position: relative;
     display: flex;
-    margin: 25px;
-    gap: 25px;
     flex-wrap: wrap;
   }
   #arti {
-    flex: 2;
-    min-width: 600px;
+    flex-grow: 2;
+  }
+  #side {
+    flex-grow: 1;
   }
   a {
     text-decoration: none;

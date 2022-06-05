@@ -26,7 +26,8 @@ export default {
       { hid: 'og:url',        property: 'og:url',        content: 'https://blog.mitori.art/',},
       { hid: 'og:type',       property: 'og:type',       content: 'website',},
       { hid: 'og:image',      property: 'og:image',      content: '~assets/cover.jpg',},
-      { hid: 'og:twitter',                               content: 'summary' },
+      { hid: 'twitter:card',  name: 'twitter:card',      content: 'summary_large_image' },
+      { hid: 'twitter:site',  name: 'twitter:site',      content: '@kadomache' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
