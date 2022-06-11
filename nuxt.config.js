@@ -20,12 +20,12 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
       //{ name: 'format-detection', content: 'telephone=no' },
-      { hid: 'og:title',      property: 'og:title',      content: 'mitorie' },
-      { hid: 'og:site_name',  property: 'og:site_name',  content: 'mitorie' },
-      { hid: 'og:description',property: 'og:description',content: "mitori's blog",},
-      { hid: 'og:url',        property: 'og:url',        content: 'https://blog.mitori.art/',},
-      { hid: 'og:type',       property: 'og:type',       content: 'website',},
-      { hid: 'og:image',      property: 'og:image',      content: '~assets/cover.jpg',},
+      { hid: 'og:title',      property: 'og:title',      content: 'mitori.blog' },
+      { hid: 'og:site_name',  property: 'og:site_name',  content: 'mitori.blog' },
+      { hid: 'og:description',property: 'og:description',content: "どうしようもないブログ。デザインとか" },
+      { hid: 'og:url',        property: 'og:url',        content: 'https://blog.mitori.art/' },
+      { hid: 'og:type',       property: 'og:type',       content: 'article' },
+      { hid: 'og:image',      property: 'og:image',      content: '@assets/cover.jpg' },
       { hid: 'twitter:card',  name: 'twitter:card',      content: 'summary_large_image' },
       { hid: 'twitter:site',  name: 'twitter:site',      content: '@kadomache' },
     ],
@@ -33,7 +33,14 @@ export default {
   },
 
   router:{
-    base: '/'
+    base: '/',
+    extendRoutes (routes, resolve) {
+      routes.push({
+        name: 'custom',
+        path: '*',
+        component: resolve(__dirname, 'pages/404.vue')
+      })
+    }
   },
 
   generate: {

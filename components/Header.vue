@@ -60,7 +60,7 @@ export default{
     display: grid;
     grid-template-columns: 40px 1fr repeat(3, fit-content(50px));
     grid-template-rows: 20px 20px;
-    background-color: $accent;
+    background-color: $text;
     font-family: 'Josefin Sans', sans-serif;
     font-size: large;
     #gw-ti {
@@ -107,7 +107,7 @@ export default{
   }
   .subtitle {
     display: table-cell;
-    color: $text;
+    color: $accent;
   }
   .links {
     margin: 0 15px;
