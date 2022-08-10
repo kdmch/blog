@@ -11,10 +11,8 @@
         </div>
       </div>
       <div class="sidebarcap">
-        <p> dfhbgsducgwiuhw </p>
-        <p> dfhbgsducgwiuhw </p>
-        <p> dfhbgsducgwiuhw </p>
-        <p> dfhbgsducgwiuhw </p>
+        <p> 自称 Web & グラフィックデザイナー 兼 DTMer、ツイッターお絵描キスト。</p>
+        <p> 言語系。ベクター。they/them。暑い。</p>
       </div>
       <div class="socials">
         <v-icon color="#dff2ff" medium> mdi-twitter </v-icon>
@@ -25,16 +23,16 @@
     <div class="sidebar">
       <div class="sidebarheader">
         <div class="sidebaricon">
-          <v-icon color="#dd5b9c" x-large> mdi-crown </v-icon>
+          <v-icon color="#dd5b9c" x-large> mdi-new-box </v-icon>
         </div>
         <div class="sidebarblankforimg"></div>
         <div class="sidebarheadercap">
           <div class="sidebarsubtitle">Other Articles</div>
-          <div class="sidebartitle">Mostly Viewed</div>
+          <div class="sidebartitle">新着記事</div>
         </div>
       </div>
       <div class="sidebarcap">
-        uhaeriughisdufghiaeurgieurg
+        まだない
       </div>
     </div>
   </div>
@@ -83,7 +81,7 @@ export default {}
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
-  background: linear-gradient(to right, $accent, $base);
+  background: $base;
   background-size: cover;
   border-radius: 40px;
   height: 80px;
@@ -105,17 +103,19 @@ export default {}
 
 .sidebarheadercap {
   display: flex;
+
   flex-direction: column;
 }
 
 .sidebarsubtitle {
   padding-top: 8px;
-  font-size: 2.5vh;
+  font-size: 2vh;
   color: $deep;
 }
 
 .sidebartitle {
   font-size: 3.5vh;
+  font-weight: bold;
   color: $text;
   padding-bottom: 8px;
 }
@@ -123,7 +123,7 @@ export default {}
 .sidebarcap {
   padding: 12px;
   font-family: sans-serif;
-  font-size: 2.2vh;
+  font-size: 1.8vh;
   color: $base;
 }
 

@@ -102,12 +102,12 @@ export default {
       color: $base;
 
       #authername {
-        font-size: x-large;
+        font-size: 3.2vh;
       }
 
       #autherbio {
         margin-left: 12px;
-        font-size: small;
+        font-size: 2vh;
       }
     }
   }
@@ -122,16 +122,16 @@ export default {
   }
 
   #rarticle {
-    margin: 12px;
+
     display: flex;
     flex-flow: column nowrap;
-    gap: 24px;
+    gap: 16px;
   }
 }
 
 .rarticlewrap {
   display: flex;
-  min-width: 400px;
+  margin-top: 12px;
   height: 80px;
   border: 2px solid $base;
   border-radius: 20px;
@@ -151,13 +151,13 @@ export default {
     color: $base;
 
     .rarticletitle {
-      font-size: x-large;
+      font-size: 3.2vh;
       font-weight: bold;
     }
 
     .rarticletext {
       margin-left: 12px;
-      font-size: small;
+      font-size: 2vh;
     }
   }
 }

@@ -12,13 +12,14 @@
 #main {
   position: relative;
   display: flex;
+  justify-content: center;
   margin: 25px;
   gap: 25px;
   flex-wrap: wrap;
 
   #arti {
     flex-grow: 1;
-    min-width: 600px;
+    max-width: 900px;
 
     #wrap {
       position: relative;
@@ -30,8 +31,16 @@
       background-size: contain;
       border-radius: 30px;
 
+      #eyecatch {
+        position: relative;
+        margin-left: 30px;
+        margin-right: 30px;
+        #eyecatchimg {
+          width: 100%;
+        }
+      }
+
       #text {
-        margin-top: 3vh;
         margin-bottom: 3vh;
         color: $text;
       }

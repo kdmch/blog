@@ -6,6 +6,7 @@
     <div id="arti">
       <div id="wrap">
         <Aheader :caps="headercaps" />
+        <div id="eyecatch"><img id="eyecatchimg" src="img/oneway.jpg"></div>
         <div id="text">
           <div class="blank"></div>
           <h1>準備中</h1>
@@ -43,7 +44,7 @@ export default {
   data: () => {
     return {
       headercaps: {
-        title: '全然できてない！',
+        title: '全然できてない！あああああああああああああああああああ',
         updated: '2022.06.11',
         tags: ['#テスト', '#test', '#test2'],
       },
