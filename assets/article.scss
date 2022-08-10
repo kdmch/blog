@@ -46,3 +46,17 @@
 #side {
   width: 360px;
 }
+
+@media screen and (max-width: 768px) {
+  #main {
+    margin: 0px;
+    margin-top: 12px;
+    #arti {
+      min-width: none;
+      width: 100%;
+    }
+  }
+  #side {
+    width: 100%;
+  }
+}

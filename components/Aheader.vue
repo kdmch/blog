@@ -119,4 +119,9 @@ export default {
 a {
   text-decoration: none;
 }
+
+@media screen and (max-width: 768px) {
+  
+}
+
 </style>
