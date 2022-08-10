@@ -1,6 +1,7 @@
 <template>
   <div id="header">
-    <img id="mtrm" src="mitorime.png"/>
+    <img id="logo" src="mitorime.png"/>
+    <div id="cap"> どうしようもないブログ。デザインとか </div>
   </div>
 </template>
 
@@ -15,13 +16,21 @@ export default {
   #header {
     position: relative;
     width: 100%;
-    height: 100px;
+    height: 120px;
     padding: 15px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
     background-color: $text;
-    #mtrm {
-      object-fit: contain;
+    #logo {
+      margin: auto;
+      width: 210px;
+      height: 70px;
+    }
+    #cap {
+      text-align: center;
+      font-size: 1.5vh;
+      color: $accent;
     }
   }
 

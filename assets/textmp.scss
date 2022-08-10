@@ -16,6 +16,7 @@
     border-left-width: 24px;
     border-image: linear-gradient(to right, $accent, $text) 1;
     font-style: italic;
+    font-size: 2.2vh;
   }
   h1 {
     color: $base;
@@ -58,12 +59,7 @@
   p {
     font-size: 2.2vh;
     margin-left: 4vh;
-    line-height: 90%;
   }
   a {
     text-decoration: none;
   }
-
-@media screen and (max-width: 768px) {
-  
-}

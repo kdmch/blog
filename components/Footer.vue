@@ -1,7 +1,7 @@
 <template>
   <div id="footer">
     <div id="gw-tl">
-      <div class="maintitle"> MITORI.ART > BLOG </div>
+      <img id="logo" src="mitorime.png"/>
       <div id="caption">
         <p>このブログは Nuxt.js を使って開発されています。</p>
         <p>内容についてのお問い合わせは Twitter @kadomache まで。</p>
@@ -26,12 +26,18 @@ export default {
     #gw-tl {
       display: flex;
       flex-flow: column nowrap;
-      padding: 30px;
+      padding-top: 60px;
+      padding-bottom: 40px;
       color: $accent;
       font-size: medium;
+      #logo {
+        width: 150px;
+        height: 50px;
+        margin: auto;
+      }
       #caption {
+        text-align: center;
         margin-top: 20px;
-        line-height: 50%;
       }
       #copyright {
         margin-top: 20px;
