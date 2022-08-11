@@ -2,7 +2,7 @@ import colors from 'vuetify/es5/util/colors'
 
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
-  ssr: false,
+  ssr: true,
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -10,7 +10,7 @@ export default {
     target: 'static',
     buildDir: 'nuxt-docs',
 
-    title: 'mitorie',
+    title: 'mitorime',
     htmlAttrs: {
       lang: 'ja',
       prefix: 'og: http://ogp.me/ns#'
@@ -20,10 +20,10 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
       //{ name: 'format-detection', content: 'telephone=no' },
-      { hid: 'og:title',      property: 'og:title',      content: 'mitori.blog' },
-      { hid: 'og:site_name',  property: 'og:site_name',  content: 'mitori.blog' },
+      { hid: 'og:title',      property: 'og:title',      content: 'ミトリメ' },
+      { hid: 'og:site_name',  property: 'og:site_name',  content: 'ミトリメ' },
       { hid: 'og:description',property: 'og:description',content: "どうしようもないブログ。デザインとか" },
-      { hid: 'og:url',        property: 'og:url',        content: 'https://blog.mitori.art/' },
+      { hid: 'og:url',        property: 'og:url',        content: 'https://mitori.me/' },
       { hid: 'og:type',       property: 'og:type',       content: 'article' },
       { hid: 'og:image',      property: 'og:image',      content: '@assets/cover.jpg' },
       { hid: 'twitter:card',  name: 'twitter:card',      content: 'summary_large_image' },

@@ -33,10 +33,11 @@
 export default {
   head() {
     return {
+      title: '全然できてない！ - ミトリメ',
       meta: [
-        { hid: 'og:title',       property: 'og:title',       content: '準備中らしい - mitori.blog' },
+        { hid: 'og:title',       property: 'og:title',       content: '全然できてない！ - ミトリメ' },
         { hid: 'og:description', property: 'og:description', content: "どうしようもないブログ。デザインとか" },
-        { hid: 'og:image',       property: 'og:image',       content: '@assets/mitori.png' },
+        { hid: 'og:image',       property: 'og:image',       content: 'img/oneway.png' },
       ]
     }
   },
@@ -44,8 +45,8 @@ export default {
   data: () => {
     return {
       headercaps: {
-        title: '全然できてない！あああああああああああああああああああ',
-        updated: '2022.06.11',
+        title: '全然できてない！',
+        updated: '2022.8.11',
         tags: ['#テスト', '#test', '#test2'],
       },
 
