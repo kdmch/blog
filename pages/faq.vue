@@ -6,22 +6,27 @@
       <div id="arti">
         <div id="wrap">
           <Aheader :caps="headercaps" />
-          <div id="eyecatch"> <img id="eyecatchimg" src="img/oneway.jpg"> </div>
+          <div id="eyecatch"> <img id="eyecatchimg" src="img/faq.png"> </div>
           <div id="text">
             <div class="blank" />
-            <h1>準備中</h1>
-            <h3>まだ全然作ってないよ</h3>
+            <h1>サイト全体</h1>
             <div class="blank" />
-            <div class="line" />
-            <div class="blank" />
-            <p>ちゃんと公開できるのは7月後半とかになりそう。頑張る</p>
-            <div class="quote"> これは引用した文章載っけるスペース </div>
-            <div class="img"> <img class="i" src="img/testimgia.png" alt="テスト" loading="lazy"> </div>
-            <p> あとシェアボタンとかリンクはまだ機能しなくて、ガワだけ。 </p>
-            <p> スマホ表示にも対応してないから相当見づらいと思う。 </p>
-            <p> <nuxt-link to="/220812" tag="div" class="link"> リンク(別記事) </nuxt-link> </p>
-            <p> <a href="https://twitter.com/kadomache" class="link"> リンク(Twitter) </a> </p>
-            <p>まあ気長に.</p>
+            <h2>このサイトは何？</h2>
+            <div class="linenblank" />
+            <p>mitoriがデザインとか音楽とかについて語り散らかすだけのブログです。</p>
+            <div class="blank2" />
+            <h2>誰ですか？</h2>
+            <div class="linenblank" />
+            <p>mitoriといいます。デザインやプログラミングやお絵描きや作曲や言語学などをやり、全部中途半端なことで知られています。</p>
+            <div class="blank2" />
+            <h2>記事に疑問点や文句がある</h2>
+            <div class="linenblank" />
+            <p>おそらくコメント欄ができるのは相当先の話になるので、Twitter @mitorime に@またはDMを飛ばすか、mail@mitori.me までおねがいします。なるはやで対応させていただきます。</p>
+            <div class="blank2" />
+            <h2>パクっていいですか？</h2>
+            <div class="linenblank" />
+            <p>CC BY-NC (クリエイティブ・コモンズ 表示-非営利) の範囲でなら何してもいいよ。</p>
+            <div class="blank2" />
           </div>
           <Afooter :info="footercaps" />
         </div>
@@ -38,22 +43,22 @@ export default {
   data: () => {
     return {
       headercaps: {
-        title: '全然できてない！',
-        updated: '2022.8.11',
-        tags: ['#テスト', '#test', '#test2']
+        title: 'FAQs / よくある質問',
+        updated: '2022.8.31',
+        tags: ['このサイトについて']
       },
 
       footercaps: {
-        updated: '2022.8.11',
+        updated: '2022.8.31',
         auther: 'mitori',
         bio: 'まだ考えてない',
         relateds: [{
           no: 1,
-          title: 'いろいろ',
+          title: 'まだできてない',
           caption: 'うん'
         }, {
           no: 2,
-          title: 'いろいろ2',
+          title: 'まだできてない2',
           caption: 'なんで？'
         }]
       },
@@ -77,7 +82,7 @@ export default {
       {
         hid: 'og:image',
         property: 'og:image',
-        content: 'img/oneway.jpg'
+        content: 'img/faq.png'
       }
       ]
     }

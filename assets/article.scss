@@ -1,6 +1,5 @@
 @import "assets/cssvar.scss";
 
-
 #bg {
   position: fixed;
   width: 100%;
@@ -46,10 +45,6 @@
         color: $text;
       }
     }
-  }
-
-  a {
-    text-decoration: none;
   }
 }
 

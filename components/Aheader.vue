@@ -89,7 +89,7 @@ export default {
         gap: 10px;
 
         .tag {
-          background-color: $base;
+          background-color: $accent;
           border-radius: 8px;
           padding-left: 8px;
           padding-right: 8px;

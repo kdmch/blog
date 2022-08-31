@@ -1,15 +1,18 @@
 <template>
 <div id="footwrap">
   <div id="sharebelow">
-    <div id="sharecap"> SHARE! </div>
-    <v-icon color="#dd5b9c" large> mdi-clipboard-multiple-outline </v-icon>
-    <v-icon color="#1da1f2" large> mdi-twitter </v-icon>
-    <v-icon color="#4267b2" large> mdi-facebook </v-icon>
-    <v-icon color="#06c755" large> mdi-chat-processing </v-icon>
+    <div id="date">{{ info.updated }}</div>
+    <div id="share-buttons">
+      <div id="sharecap">SHARE!</div>
+      <v-icon color="#dd5b9c" large> mdi-clipboard-multiple-outline </v-icon>
+      <v-icon color="#1da1f2" large> mdi-twitter </v-icon>
+      <v-icon color="#4267b2" large> mdi-facebook </v-icon>
+      <v-icon color="#06c755" large> mdi-chat-processing </v-icon>
+    </div>
   </div>
   <div id="writtenby">
     <div id="wbwrap">
-      <div id="wb"> WRITTEN BY </div>
+      <div id="wb">WRITTEN BY</div>
       <div id="auther">
         <div id="authericon"></div>
         <div id="autherprofile">
@@ -17,7 +20,7 @@
             {{ info.auther }}
             <v-icon color="#dff2ff" medium> mdi-check-decagram </v-icon>
           </div>
-          <div id="autherbio"> {{ info.bio }} </div>
+          <div id="autherbio">{{ info.bio }}</div>
         </div>
       </div>
     </div>
@@ -28,10 +31,10 @@
       </div>
       <div id="rarticle">
         <div class="rarticlewrap" v-for="related in info.relateds" :key="related.no">
-          <img class="rarticleimg" src="@/assets/mitori.png">
+          <img class="rarticleimg" src="@/assets/mitori.png" />
           <div class="rarticledetail">
-            <div class="rarticletitle"> {{ related.title }} </div>
-            <div class="rarticletext"> {{ related.caption }} </div>
+            <div class="rarticletitle">{{ related.title }}</div>
+            <div class="rarticletext">{{ related.caption }}</div>
           </div>
         </div>
       </div>
@@ -47,22 +50,35 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap");
 @import "assets/cssvar.scss";
 
 #sharebelow {
-  padding: 12px;
+  padding: 24px;
   padding-right: 20px;
   display: flex;
-  justify-content: right;
+  justify-content: space-between;
+  font-size: larger;
+
+  font-family: "Josefin Sans", sans-serif;
   gap: 12px;
 
-  #sharecap {
-    color: $deep;
-    margin-right: 8px;
-    font-size: larger;
-    font-style: italic;
-    font-family: 'Josefin Sans', sans-serif;
+  #date {
+    padding-left: 24px;
+    color: $accent;
+  }
+
+  #share-buttons {
+    display: flex;
+    justify-content: right;
+    gap: 10px;
+
+    #sharecap {
+      color: $deep;
+      font-style: italic;
+      vertical-align: middle;
+      margin-right: 8px;
+    }
   }
 }
 
@@ -122,7 +138,6 @@ export default {
   }
 
   #rarticle {
-
     display: flex;
     flex-flow: column nowrap;
     gap: 16px;
@@ -151,7 +166,7 @@ export default {
     color: $base;
 
     .rarticletitle {
-      font-size: 3.2vh;
+      font-size: 2.7vh;
       font-weight: bold;
     }
 

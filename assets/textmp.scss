@@ -1,65 +1,82 @@
-  @import "assets/cssvar.scss";
+@import "assets/cssvar.scss";
 
-  .line {
-    margin: 0 25px;
-    height: 3px;
-    border-radius: 3px;
-    background: linear-gradient(to right, $accent, $text);
+.line {
+  margin: 0 25px;
+  height: 3px;
+  border-radius: 3px;
+  background: linear-gradient(to right, $accent, $text);
+}
+.linenblank {
+  margin: 0 25px;
+  margin-bottom: 20px;
+  height: 3px;
+  border-radius: 3px;
+  background: linear-gradient(to right, $accent, $text);
+}
+.blank {
+  height: 20px;
+}
+.blank2 {
+  height: 40px;
+}
+.quote {
+  margin: 20px;
+  padding: 2vh;
+  border: 2px solid;
+  border-left-width: 24px;
+  border-image: linear-gradient(to right, $accent, $text) 1;
+  font-style: italic;
+  font-size: 2.2vh;
+}
+.img {
+  margin: 20px;
+  .i {
+    width: 100%;
   }
-  .blank {
-    height: 20px;
-  }
-  .quote {
-    margin: 3vh 4vh;
-    padding: 2vh;
-    border: 2px solid;
-    border-left-width: 24px;
-    border-image: linear-gradient(to right, $accent, $text) 1;
-    font-style: italic;
-    font-size: 2.2vh;
-  }
-  h1 {
-    color: $base;
-    background-color: $text;
-    font-size: 3vh;
-    margin-left: 3vh;
-    margin-bottom: 2vh;
-    margin-right: 3vh;
-    padding: 1vh;
-    padding-left: 2vh;
-    border-radius: 1vh;
-    border: 0px solid $accent;
-    border-left-width: 12px;
-  }
-  h2 {
-    font-size: 2.8vh;
-    margin-left: 4vh;
-    margin-bottom: 1.5vh;
-  }
-  h3 {
-    font-size: 2.5vh;
-    margin-left: 4vh;
-    margin-bottom: 1vh;
-  }
-  h4 {
-    font-size: 2.5vh;
-    margin-left: 4vh;
-    margin-bottom: 1vh;
-  }
-  h5 {
-    font-size: 2.2vh;
-    margin-left: 4vh;
-    margin-bottom: 0.8vh;
-  }
-  h6 {
-    font-size: 2.2vh;
-    margin-left: 4vh;
-    margin-bottom: 0.8vh;
-  }
-  p {
-    font-size: 2.2vh;
-    margin-left: 4vh;
-  }
-  a {
+}
+h1 {
+  color: $base;
+  background-color: $text;
+  font-size: 3vh;
+  margin-left: 3vh;
+  margin-bottom: 2vh;
+  margin-right: 3vh;
+  padding: 1vh;
+  padding-left: 2vh;
+  border-radius: 1vh;
+  border: 0px solid $accent;
+  border-left-width: 12px;
+}
+h2 {
+  font-size: 2.8vh;
+  margin-left: 4vh;
+  margin-bottom: 1.5vh;
+}
+h3 {
+  font-size: 2.5vh;
+  margin-left: 4vh;
+  margin-bottom: 1vh;
+}
+h4 {
+  font-size: 2.5vh;
+  margin-left: 4vh;
+  margin-bottom: 1vh;
+}
+h5 {
+  font-size: 2.2vh;
+  margin-left: 4vh;
+  margin-bottom: 0.8vh;
+}
+h6 {
+  font-size: 2.2vh;
+  margin-left: 4vh;
+  margin-bottom: 0.8vh;
+}
+p {
+  font-size: 2.2vh;
+  margin: 0 5vh;
+  .link {
+    color: $deep;
     text-decoration: none;
   }
+}

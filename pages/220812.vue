@@ -6,27 +6,17 @@
       <div id="arti">
         <div id="wrap">
           <Aheader :caps="headercaps" />
-          <div id="eyecatch"> <img id="eyecatchimg" src="img/oneway.jpg"> </div>
           <div id="text">
-            <div class="blank" />
-            <h1>準備中</h1>
-            <h3>まだ全然作ってないよ</h3>
-            <div class="blank" />
-            <div class="line" />
-            <div class="blank" />
-            <p>ちゃんと公開できるのは7月後半とかになりそう。頑張る</p>
-            <div class="quote"> これは引用した文章載っけるスペース </div>
-            <div class="img"> <img class="i" src="img/testimgia.png" alt="テスト" loading="lazy"> </div>
-            <p> あとシェアボタンとかリンクはまだ機能しなくて、ガワだけ。 </p>
-            <p> スマホ表示にも対応してないから相当見づらいと思う。 </p>
-            <p> <nuxt-link to="/220812" tag="div" class="link"> リンク(別記事) </nuxt-link> </p>
-            <p> <a href="https://twitter.com/kadomache" class="link"> リンク(Twitter) </a> </p>
-            <p>まあ気長に.</p>
+            <nuxt-link to="/220811">
+              戻る
+            </nuxt-link>
           </div>
           <Afooter :info="footercaps" />
         </div>
       </div>
-      <div id="side"> <Sidebar /> </div>
+      <div id="side">
+        <Sidebar />
+      </div>
     </div>
     <Footer />
   </v-app>
@@ -44,7 +34,6 @@ export default {
       },
 
       footercaps: {
-        updated: '2022.8.11',
         auther: 'mitori',
         bio: 'まだ考えてない',
         relateds: [{
@@ -63,7 +52,7 @@ export default {
   },
   head () {
     return {
-      title: '全然できてない！ - ミトリメ',
+      title: '？ - ミトリメ',
       meta: [{
         hid: 'og:title',
         property: 'og:title',
@@ -77,7 +66,7 @@ export default {
       {
         hid: 'og:image',
         property: 'og:image',
-        content: 'img/oneway.jpg'
+        content: 'img/oneway.png'
       }
       ]
     }

@@ -14,19 +14,19 @@
 export default {
   data: () => ({
     windowWidth: window.innerWidth,
-    windowHeight: window.innerHeight,
+    windowHeight: window.innerHeight
   }),
 
-  mounted() {
+  mounted () {
     window.addEventListener('resize', this.getWindowSize)
   },
 
   methods: {
-    getWindowSize() {
+    getWindowSize () {
       this.windowWidth = window.innerWidth
       this.windowHeight = window.innerHeight
-    },
-  },
+    }
+  }
 }
 </script>
 

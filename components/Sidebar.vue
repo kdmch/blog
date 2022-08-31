@@ -114,7 +114,7 @@ export default {}
 }
 
 .sidebartitle {
-  font-size: 3.5vh;
+  font-size: 3vh;
   font-weight: bold;
   color: $text;
   padding-bottom: 8px;
