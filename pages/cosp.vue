@@ -91,7 +91,7 @@ export default {
       {
         hid: 'og:image',
         property: 'og:image',
-        content: 'https:/mitori.me/cover.png'
+        content: 'https://raw.githubusercontent.com/kdmch/blog/master/assets/cover.png'
       }
       ]
     }
