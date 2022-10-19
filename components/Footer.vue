@@ -4,7 +4,7 @@
       <img id="logo" src="mitorime.png"/>
       <div id="caption">
         <p>このブログは Nuxt.js を使って開発されています。</p>
-        <p>内容についてのお問い合わせは Twitter @kadomache まで。</p>
+        <p>内容についてのお問い合わせは Twitter @mitorime まで。</p>
       </div>
       <div id="copyright"> ©︎ 2022 mitori </div>
     </div>

@@ -10,15 +10,14 @@
   <div id="gw-tb">
     <div id="tags">
       <div id="tagr">
-        <div class="tag" v-for="tag in caps.tags" :key="tag"> {{ tag }} </div>
+        <div v-for="tag in caps.tags" :key="tag" class="tag"> {{ tag }} </div>
       </div>
     </div>
     <div id="tagblank">
       <div id="share">
-        <v-icon color="#dd5b9c" > mdi-clipboard-multiple-outline </v-icon>
-        <v-icon color="#1da1f2" > mdi-twitter </v-icon>
-        <v-icon color="#4267b2" > mdi-facebook </v-icon>
-        <v-icon color="#06c755" > mdi-chat-processing </v-icon>
+        <v-icon color="#1da1f2" @click="twitterShare"> mdi-twitter </v-icon>
+        <v-icon color="#4267b2"> mdi-facebook </v-icon>
+        <v-icon color="#06c755"> mdi-chat-processing </v-icon>
       </div>
     </div>
   </div>
@@ -27,7 +26,22 @@
 
 <script>
 export default {
-  props: ['caps']
+  props: ['caps'],
+  data() {
+    return {
+      suffix: ' - ミトリメ'
+    }
+  },
+  methods: {
+    twitterShare() {
+      const intentUrl = 'https://twitter.com/intent/tweet?'
+      const text = ['text', this.caps.pagename + this.suffix + '\n']
+      const url = ['url', this.caps.url]
+      const parameter = new URLSearchParams([text, url]).toString()
+      const shareUrl = `${intentUrl}${parameter}`
+      window.open(shareUrl, 'twitter')
+    }
+  }
 }
 </script>
 

@@ -6,7 +6,10 @@
       <div id="arti">
         <div id="wrap">
           <Aheader :caps="headercaps" />
-          <div id="eyecatch"> <img id="eyecatchimg" src="img/oneway.jpg"> </div>
+          <div id="eyecatch">
+            <img id="eyecatchimg" src="img/oneway.jpg">
+            特に関係ない画像
+          </div>
           <div id="text">
             <div class="blank" />
             <h1>準備中</h1>
@@ -14,7 +17,7 @@
             <div class="blank" />
             <div class="line" />
             <div class="blank" />
-            <p>ちゃんと公開できるのは7月後半とかになりそう。頑張る</p>
+            <p>ちゃんと公開できるのは11月後半とかになりそう。頑張る</p>
             <div class="quote"> これは引用した文章載っけるスペース </div>
             <div class="img"> <img class="i" src="img/testimgia.png" alt="テスト" loading="lazy"> </div>
             <p> あとシェアボタンとかリンクはまだ機能しなくて、ガワだけ。 </p>
@@ -38,23 +41,29 @@ export default {
   data: () => {
     return {
       headercaps: {
+        pagename: '全然できてない！',
+        url: 'https://mitori.me/220811',
         title: '全然できてない！',
         updated: '2022.8.11',
         tags: ['#テスト', '#test', '#test2']
       },
 
       footercaps: {
+        pagename: '全然できてない！',
+        url: 'https://mitori.me/220811',
         updated: '2022.8.11',
         auther: 'mitori',
         bio: 'まだ考えてない',
         relateds: [{
           no: 1,
           title: 'いろいろ',
-          caption: 'うん'
+          caption: 'うん',
+          path: '/faq'
         }, {
           no: 2,
           title: 'いろいろ2',
-          caption: 'なんで？'
+          caption: 'なんで？',
+          path: '/220812'
         }]
       },
       windowWidth: window.innerWidth,

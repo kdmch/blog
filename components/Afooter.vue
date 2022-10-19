@@ -4,8 +4,7 @@
     <div id="date">{{ info.updated }}</div>
     <div id="share-buttons">
       <div id="sharecap">SHARE!</div>
-      <v-icon color="#dd5b9c" large> mdi-clipboard-multiple-outline </v-icon>
-      <v-icon color="#1da1f2" large> mdi-twitter </v-icon>
+      <v-icon color="#1da1f2" large @click="twitterShare"> mdi-twitter </v-icon>
       <v-icon color="#4267b2" large> mdi-facebook </v-icon>
       <v-icon color="#06c755" large> mdi-chat-processing </v-icon>
     </div>
@@ -30,12 +29,14 @@
         <v-icon color="#f3abc0" medium> mdi-arrow-top-right-thick </v-icon>
       </div>
       <div id="rarticle">
-        <div class="rarticlewrap" v-for="related in info.relateds" :key="related.no">
-          <img class="rarticleimg" src="@/assets/mitori.png" />
-          <div class="rarticledetail">
-            <div class="rarticletitle">{{ related.title }}</div>
-            <div class="rarticletext">{{ related.caption }}</div>
-          </div>
+        <div v-for="related in info.relateds" :key="related.no" class="rarticlewrap">
+          <nuxt-link :to="related.path" tag="div" class="ralinker">
+            <img class="rarticleimg" src="@/assets/mitori.png">
+            <div class="rarticledetail">
+              <div class="rarticletitle">{{ related.title }}</div>
+              <div class="rarticletext">{{ related.caption }}</div>
+            </div>
+          </nuxt-link>
         </div>
       </div>
     </div>
@@ -45,7 +46,22 @@
 
 <script>
 export default {
-  props: ['info']
+  props: ['info'],
+  data() {
+    return {
+      suffix: ' - ミトリメ'
+    }
+  },
+  methods: {
+    twitterShare() {
+      const intentUrl = 'https://twitter.com/intent/tweet?'
+      const text = ['text', this.info.pagename + this.suffix + '\n']
+      const url = ['url', this.info.url]
+      const parameter = new URLSearchParams([text, url]).toString()
+      const shareUrl = `${intentUrl}${parameter}`
+      window.open(shareUrl, 'twitter')
+    }
+  }
 }
 </script>
 
@@ -144,7 +160,7 @@ export default {
   }
 }
 
-.rarticlewrap {
+.ralinker {
   display: flex;
   margin-top: 12px;
   height: 80px;

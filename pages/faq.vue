@@ -19,13 +19,15 @@
             <div class="linenblank" />
             <p>mitoriといいます。デザインやプログラミングやお絵描きや作曲や言語学などをやり、全部中途半端なことで知られています。</p>
             <div class="blank2" />
-            <h2>記事に疑問点や文句がある</h2>
+            <h2>記事に疑問点がある</h2>
             <div class="linenblank" />
-            <p>おそらくコメント欄ができるのは相当先の話になるので、Twitter @mitorime に@またはDMを飛ばすか、mail@mitori.me までおねがいします。なるはやで対応させていただきます。</p>
+            <p>おそらくコメント欄ができるのは相当先の話になるので、Twitter @mitorime に@またはDMを飛ばすか、mail@mitori.me までおねがいします。</p>
+            <p>なるはやで対応させていただきます。</p>
             <div class="blank2" />
             <h2>パクっていいですか？</h2>
             <div class="linenblank" />
-            <p>CC BY-NC (クリエイティブ・コモンズ 表示-非営利) の範囲でなら何してもいいよ。</p>
+            <p>基本的に何してもいいよ。</p>
+            <p>素材って書いてあるやつは完全自由。</p>
             <div class="blank2" />
           </div>
           <Afooter :info="footercaps" />
@@ -43,23 +45,29 @@ export default {
   data: () => {
     return {
       headercaps: {
+        pagename: 'FAQs',
+        url: 'https://mitori.me/faq',
         title: 'FAQs / よくある質問',
         updated: '2022.8.31',
         tags: ['このサイトについて']
       },
 
       footercaps: {
+        pagename: 'FAQs',
+        url: 'https://mitori.me/faq',
         updated: '2022.8.31',
         auther: 'mitori',
         bio: 'まだ考えてない',
         relateds: [{
           no: 1,
           title: 'まだできてない',
-          caption: 'うん'
+          caption: 'うん',
+          path: '/220811'
         }, {
           no: 2,
           title: 'まだできてない2',
-          caption: 'なんで？'
+          caption: 'なんで？',
+          path: '/220812'
         }]
       },
       windowWidth: window.innerWidth,
@@ -68,11 +76,11 @@ export default {
   },
   head () {
     return {
-      title: '全然できてない！ - ミトリメ',
+      title: 'FAQs - ミトリメ',
       meta: [{
         hid: 'og:title',
         property: 'og:title',
-        content: '全然できてない！ - ミトリメ'
+        content: 'FAQs - ミトリメ'
       },
       {
         hid: 'og:description',
