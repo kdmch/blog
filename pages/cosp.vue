@@ -91,7 +91,7 @@ export default {
       {
         hid: 'og:image',
         property: 'og:image',
-        content: '@assets/cover.png'
+        content: 'https:/mitori.me/cover.png'
       }
       ]
     }

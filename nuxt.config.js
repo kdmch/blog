@@ -25,7 +25,7 @@ export default {
       { hid: 'og:description',property: 'og:description',content: "どうしようもないブログ。デザインとか" },
       { hid: 'og:url',        property: 'og:url',        content: 'https://mitori.me/' },
       { hid: 'og:type',       property: 'og:type',       content: 'article' },
-      { hid: 'og:image',      property: 'og:image',      content: '@assets/cover.jpg' },
+      { hid: 'og:image',      property: 'og:image',      content: 'https:/mitori.me/cover.png' },
       { hid: 'twitter:card',  name: 'twitter:card',      content: 'summary_large_image' },
       { hid: 'twitter:site',  name: 'twitter:site',      content: '@kadomache' },
     ],
