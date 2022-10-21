@@ -12,21 +12,6 @@
 
 <script>
 export default {
-  data: () => ({
-    windowWidth: window.innerWidth,
-    windowHeight: window.innerHeight
-  }),
-
-  mounted () {
-    window.addEventListener('resize', this.getWindowSize)
-  },
-
-  methods: {
-    getWindowSize () {
-      this.windowWidth = window.innerWidth
-      this.windowHeight = window.innerHeight
-    }
-  }
 }
 </script>
 

@@ -38,8 +38,16 @@
 <script>
 export default {
 
-  data: () => {
+  data () {
     return {
+      meta: {
+        title: '全然できてない！ - ミトリメ',
+        description: 'ごめんなさい今作ってますもう少し待ってください',
+        type: 'article',
+        url: 'https://mitori.me/220811',
+        image: 'https://raw.githubusercontent.com/kdmch/blog/master/assets/cover.png.'
+      },
+
       headercaps: {
         pagename: '全然できてない！',
         url: 'https://mitori.me/220811',
@@ -65,41 +73,20 @@ export default {
           caption: 'なんで？',
           path: '/220812'
         }]
-      },
-      windowWidth: window.innerWidth,
-      windowHeight: window.innerHeight
+      }
     }
   },
   head () {
     return {
-      title: '全然できてない！ - ミトリメ',
-      meta: [{
-        hid: 'og:title',
-        property: 'og:title',
-        content: '全然できてない！ - ミトリメ'
-      },
-      {
-        hid: 'og:description',
-        property: 'og:description',
-        content: 'どうしようもないブログ。デザインとか'
-      },
-      {
-        hid: 'og:image',
-        property: 'og:image',
-        content: 'img/oneway.jpg'
-      }
+      title: this.meta.title,
+      meta: [
+        { hid: 'description', name: 'description', content: this.meta.description },
+        { hid: 'og:type', property: 'og:type', content: this.meta.type },
+        { hid: 'og:title', property: 'og:title', content: this.meta.title },
+        { hid: 'og:description', property: 'og:description', content: this.meta.description },
+        { hid: 'og:url', property: 'og:url', content: this.meta.url },
+        { hid: 'og:image', property: 'og:image', content: this.meta.image }
       ]
-    }
-  },
-
-  mounted () {
-    window.addEventListener('resize', this.getWindowSize)
-  },
-
-  methods: {
-    getWindowSize () {
-      this.windowWidth = window.innerWidth
-      this.windowHeight = window.innerHeight
     }
   }
 }

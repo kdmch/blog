@@ -42,8 +42,16 @@
 <script>
 export default {
 
-  data: () => {
+  data () {
     return {
+      meta: {
+        title: 'FAQs',
+        description: '読もう',
+        type: 'article',
+        url: 'https://mitori.me/faq',
+        image: 'https://raw.githubusercontent.com/kdmch/blog/master/static/img/faq.png.'
+      },
+
       headercaps: {
         pagename: 'FAQs',
         url: 'https://mitori.me/faq',
@@ -69,41 +77,20 @@ export default {
           caption: 'なんで？',
           path: '/220812'
         }]
-      },
-      windowWidth: window.innerWidth,
-      windowHeight: window.innerHeight
+      }
     }
   },
   head () {
     return {
-      title: 'FAQs - ミトリメ',
-      meta: [{
-        hid: 'og:title',
-        property: 'og:title',
-        content: 'FAQs - ミトリメ'
-      },
-      {
-        hid: 'og:description',
-        property: 'og:description',
-        content: 'どうしようもないブログ。デザインとか'
-      },
-      {
-        hid: 'og:image',
-        property: 'og:image',
-        content: 'img/faq.png'
-      }
+      title: this.meta.title,
+      meta: [
+        { hid: 'description', name: 'description', content: this.meta.description },
+        { hid: 'og:type', property: 'og:type', content: this.meta.type },
+        { hid: 'og:title', property: 'og:title', content: this.meta.title },
+        { hid: 'og:description', property: 'og:description', content: this.meta.description },
+        { hid: 'og:url', property: 'og:url', content: this.meta.url },
+        { hid: 'og:image', property: 'og:image', content: this.meta.image }
       ]
-    }
-  },
-
-  mounted () {
-    window.addEventListener('resize', this.getWindowSize)
-  },
-
-  methods: {
-    getWindowSize () {
-      this.windowWidth = window.innerWidth
-      this.windowHeight = window.innerHeight
     }
   }
 }

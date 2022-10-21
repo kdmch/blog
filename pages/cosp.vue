@@ -47,9 +47,16 @@
 
 <script>
 export default {
-
-  data: () => {
+  data () {
     return {
+      meta: {
+        title: 'コス垢用プロフ！',
+        description: '自己紹介とか注意事項とか。フォローの際はご一読を！',
+        type: 'article',
+        url: 'https://mitori.me/cosp',
+        image: 'https://raw.githubusercontent.com/kdmch/blog/master/assets/cover.png.'
+      },
+
       headercaps: {
         pagename: 'コス垢用プロフ！',
         url: 'https://mitori.me/cosp',
@@ -70,41 +77,20 @@ export default {
           caption: 'テスト用ページ',
           path: '/220811'
         }]
-      },
-      windowWidth: window.innerWidth,
-      windowHeight: window.innerHeight
+      }
     }
   },
   head () {
     return {
-      title: 'コス垢用プロフ！ - ミトリメ',
-      meta: [{
-        hid: 'og:title',
-        property: 'og:title',
-        content: 'コス垢用プロフ！ - ミトリメ'
-      },
-      {
-        hid: 'og:description',
-        property: 'og:description',
-        content: 'プロフとか注意事項とか。ご一読を'
-      },
-      {
-        hid: 'og:image',
-        property: 'og:image',
-        content: 'https://raw.githubusercontent.com/kdmch/blog/master/assets/cover.png'
-      }
+      title: this.meta.title,
+      meta: [
+        { hid: 'description', name: 'description', content: this.meta.description },
+        { hid: 'og:type', property: 'og:type', content: this.meta.type },
+        { hid: 'og:title', property: 'og:title', content: this.meta.title },
+        { hid: 'og:description', property: 'og:description', content: this.meta.description },
+        { hid: 'og:url', property: 'og:url', content: this.meta.url },
+        { hid: 'og:image', property: 'og:image', content: this.meta.image }
       ]
-    }
-  },
-
-  mounted () {
-    window.addEventListener('resize', this.getWindowSize)
-  },
-
-  methods: {
-    getWindowSize () {
-      this.windowWidth = window.innerWidth
-      this.windowHeight = window.innerHeight
     }
   }
 }
