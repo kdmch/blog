@@ -54,7 +54,7 @@ export default {
         description: '自己紹介とか注意事項とか。フォローの際はご一読を！',
         type: 'article',
         url: 'https://mitori.me/cosp',
-        image: 'https://raw.githubusercontent.com/kdmch/blog/master/assets/cover.png.'
+        image: 'https://raw.githubusercontent.com/kdmch/blog/master/assets/cover.png'
       },
 
       headercaps: {

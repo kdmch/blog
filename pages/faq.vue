@@ -49,13 +49,13 @@ export default {
         description: '読もう',
         type: 'article',
         url: 'https://mitori.me/faq',
-        image: 'https://raw.githubusercontent.com/kdmch/blog/master/static/img/faq.png.'
+        image: 'https://raw.githubusercontent.com/kdmch/blog/master/static/img/faq.png'
       },
 
       headercaps: {
         pagename: 'FAQs',
         url: 'https://mitori.me/faq',
-        title: 'FAQs / よくある質問',
+        title: 'FAQs',
         updated: '2022.8.31',
         tags: ['このサイトについて']
       },

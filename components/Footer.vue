@@ -3,7 +3,7 @@
     <div id="gw-tl">
       <img id="logo" src="mitorime.png"/>
       <div id="caption">
-        <p>このブログは Nuxt.js を使って開発されています。</p>
+        <p>Powered by Nuxt.js</p>
         <p>内容についてのお問い合わせは Twitter @mitorime まで。</p>
       </div>
       <div id="copyright"> ©︎ 2022 mitori </div>

@@ -27,7 +27,7 @@ export default {
       { hid: 'og:type',       property: 'og:type',       content: 'article' },
       { hid: 'og:image',      property: 'og:image',      content: 'https://raw.githubusercontent.com/kdmch/blog/master/assets/cover.png' },
       { hid: 'twitter:card',  name: 'twitter:card',      content: 'summary_large_image' },
-      { hid: 'twitter:site',  name: 'twitter:site',      content: '@kadomache' },
+      { hid: 'twitter:site',  name: 'twitter:site',      content: '@mitorime' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },

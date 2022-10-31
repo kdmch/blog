@@ -45,7 +45,7 @@ export default {
         description: 'ごめんなさい今作ってますもう少し待ってください',
         type: 'article',
         url: 'https://mitori.me/220811',
-        image: 'https://raw.githubusercontent.com/kdmch/blog/master/assets/cover.png.'
+        image: 'https://raw.githubusercontent.com/kdmch/blog/master/assets/cover.png'
       },
 
       headercaps: {
