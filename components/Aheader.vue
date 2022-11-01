@@ -68,7 +68,7 @@ export default {
       flex-grow: 2;
       color: $base;
       font-size: 5vh;
-      font-family: 'Dela Gothic One', cursive;
+      font-family: 'Dela Gothic One', sans-serif;
       line-height: 90%;
       max-width: 900px;
       //text-shadow: 0px 0px 40px #ffffffaa;

@@ -39,12 +39,18 @@ export default {
         title: 'まだできてない',
         caption: '仮。そのうちちゃんとした記事が並ぶ予定です。',
         path: '/220811',
-        image: 'img/default2.png'
+        image: 'img/default.png'
       }, {
         no: 2,
         title: 'FAQs',
         caption: 'is (not) Frequency Answered',
         path: '/faq',
+        image: 'img/default2.png'
+      }, {
+        no: 3,
+        title: '自作ブログが全然完成しない',
+        caption: 'マジでなんでなんだ',
+        path: '/221102',
         image: 'img/default.png'
       }]
     }
