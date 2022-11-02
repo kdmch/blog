@@ -45,7 +45,7 @@ export default {
   data () {
     return {
       meta: {
-        title: 'FAQs',
+        title: 'FAQs | ミトリメ',
         description: '読もう',
         type: 'article',
         url: 'https://mitori.me/faq',

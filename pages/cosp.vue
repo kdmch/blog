@@ -21,7 +21,7 @@
             <p>加工とかメイクに慣れるまではこうさせてください🙏がんばります🙏</p>
             <div class="blank" />
             <p>イベントでの撮影は全然OKです！ぜひ。その時はDMまでお写真ください。</p>
-            <p>無断転載だけはもちろんナシで。</p>
+            <p>無断転載だけはもちろんナシで……</p>
             <div class="blank2" />
             <h2>Misc.</h2>
             <div class="linenblank" />
@@ -54,7 +54,8 @@ export default {
         description: '自己紹介とか注意事項とか。フォローの際はご一読を！',
         type: 'article',
         url: 'https://mitori.me/cosp',
-        image: 'https://raw.githubusercontent.com/kdmch/blog/master/assets/cover.png'
+        image: 'https://raw.githubusercontent.com/kdmch/blog/master/static/img/default2.png',
+        card: 'summary'
       },
 
       headercaps: {
@@ -73,9 +74,9 @@ export default {
         bio: 'コス初心者です……どうか……',
         relateds: [{
           no: 1,
-          title: 'まだできてない',
-          caption: 'テスト用ページ',
-          path: '/220811'
+          title: '自作ブログが全然完成しない',
+          caption: 'マジでなんでなんだ',
+          path: '/221102'
         }]
       }
     }
@@ -89,7 +90,8 @@ export default {
         { hid: 'og:title', property: 'og:title', content: this.meta.title },
         { hid: 'og:description', property: 'og:description', content: this.meta.description },
         { hid: 'og:url', property: 'og:url', content: this.meta.url },
-        { hid: 'og:image', property: 'og:image', content: this.meta.image }
+        { hid: 'og:image', property: 'og:image', content: this.meta.image },
+        { hid: 'twitter:card', name: 'twitter:card', content: this.meta.card }
       ]
     }
   }

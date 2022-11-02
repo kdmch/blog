@@ -39,7 +39,7 @@ export default {
   data () {
     return {
       meta: {
-        title: '自作ブログが全然完成しない',
+        title: '自作ブログが全然完成しない | ミトリメ',
         description: 'マジでなんでなんだ',
         type: 'article',
         url: 'https://mitori.me/221102',
