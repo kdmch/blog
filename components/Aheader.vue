@@ -2,7 +2,7 @@
 <div id="wrapper" class="wmax">
   <!--<div class="bgrect wmax bgpink" />-->
   <div class="header">
-    <div class="eyecatch">
+    <div class="eyecatch wmax">
       <v-img :src="caps.image" class="eyecatchimage"/>
       <div class="date txpink">
         {{ caps.updated }}
@@ -81,9 +81,9 @@ export default {
     margin: 0px 24px 36px;
     .eyecatch {
       max-width: 720px;
-      min-width: 480px;
       margin-top: 32px;
       .eyecatchimage {
+        max-width: 720px;
         border-radius: 16px;
       }
       .date {
