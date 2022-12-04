@@ -1,52 +1,58 @@
 <template>
-<div id="footwrap">
-  <div id="sharebelow">
-    <div id="date">{{ info.updated }}</div>
-    <div id="share-buttons">
-      <div id="sharecap">SHARE!</div>
-      <v-icon color="#1da1f2" large @click="twitterShare"> mdi-twitter </v-icon>
-      <v-icon color="#4267b2" large> mdi-facebook </v-icon>
-      <v-icon color="#06c755" large> mdi-chat-processing </v-icon>
-    </div>
-  </div>
-  <div id="writtenby">
-    <div id="wbwrap">
-      <div id="wb">WRITTEN BY</div>
-      <div id="auther">
-        <div id="authericon"></div>
-        <div id="autherprofile">
-          <div id="authername">
-            {{ info.auther }}
-            <v-icon color="#dff2ff" medium> mdi-check-decagram </v-icon>
+  <div id="wrapper" class="wmax">
+    <div class="center w960">
+      <div class="twittershare front" @click="twitterShare">
+        <v-icon color="#ffffff" small class="icon"> mdi-twitter </v-icon>
+        <div class="twittercap icon">ツイート</div>
+      </div>
+      <div class="bgprg prel wmax bgblack" />
+      <div class="information prel wmax front">
+        <div class="writtenby txgrey">Written by</div>
+        <v-img :src="caps.authericon" max-width="48px" class="authericon" />
+        <div class="autherinfo">
+          <div class="auther">
+            {{ caps.auther }}
+            <a href="https://twitter.com/mitorime" class="icon">
+              <v-icon color="#1da1f2"> mdi-twitter </v-icon>
+            </a>
           </div>
-          <div id="autherbio">{{ info.bio }}</div>
+          <div class="bio txgrey">
+            {{ caps.bio }}
+          </div>
         </div>
       </div>
     </div>
-    <div id="rawrap">
-      <div id="ra">
-        RELATED ARTICLES
-        <v-icon color="#f3abc0" medium> mdi-arrow-top-right-thick </v-icon>
-      </div>
-      <div id="rarticle">
-        <div v-for="related in info.relateds" :key="related.no" class="rarticlewrap">
-          <nuxt-link :to="related.path" tag="div" class="ralinker">
-            <img class="rarticleimg" src="@/assets/mitori.png">
-            <div class="rarticledetail">
-              <div class="rarticletitle">{{ related.title }}</div>
-              <div class="rarticletext">{{ related.caption }}</div>
-            </div>
-          </nuxt-link>
+    <div class="prel wmax bgblack">
+      <div class="center front w1280">
+        <div :v-show="caps.comments == true">
+          <div class="capt">
+            <div class="emp txgrey">コメントを書く</div>
+            <div class="ruler bggrey" />
+          </div>
+          <Disqus class="disqus center w960" />
+        </div>
+        <div :v-if="caps.relateds">
+          <div class="capt">
+            <div class="emp txpink">関連記事</div>
+            <div class="ruler bgpink" />
+          </div>
+          <div class="relateds center w960">
+            <nuxt-link :to="article.url" v-for="article in caps.articles" :key="article.no" tag="div" class="articlewrapper bgpink">
+              <v-img :src="article.image" class="articleimg" />
+              <div class="articletitle txwhite">
+              {{ article.title }}
+              </div>
+            </nuxt-link>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
 </template>
 
 <script>
 export default {
-  props: ['info'],
+  props: ['caps'],
   data() {
     return {
       suffix: ' - ミトリメ'
@@ -55,8 +61,8 @@ export default {
   methods: {
     twitterShare() {
       const intentUrl = 'https://twitter.com/intent/tweet?'
-      const text = ['text', this.info.pagename + this.suffix + '\n']
-      const url = ['url', this.info.url]
+      const text = ['text', this.caps.title + this.suffix + '\n']
+      const url = ['url', this.caps.url]
       const parameter = new URLSearchParams([text, url]).toString()
       const shareUrl = `${intentUrl}${parameter}`
       window.open(shareUrl, 'twitter')
@@ -66,133 +72,123 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap");
 @import "assets/cssvar.scss";
 
-#sharebelow {
-  padding: 24px;
-  padding-right: 20px;
-  display: flex;
-  justify-content: space-between;
-  font-size: larger;
-
-  font-family: "Josefin Sans", sans-serif;
-  gap: 12px;
-
-  #date {
-    padding-left: 24px;
-    color: $accent;
+#wrapper {
+  margin-top: 32px;
+  .bgprg {
+    z-index: 0;
+    height: 30px;
+    transform-origin: top center;
+    transform: scale(8) rotate(-5deg);
   }
-
-  #share-buttons {
+  .twittershare {
+    margin: 32px auto 64px;
     display: flex;
-    justify-content: right;
-    gap: 10px;
-
-    #sharecap {
-      color: $deep;
-      font-style: italic;
-      vertical-align: middle;
-      margin-right: 8px;
+    flex-direction: row;
+    width: 116px;
+    height: 12px;
+    padding: 12px 16px;
+    background-color: #1da1f2;
+    border-radius: 12px;
+    .twittercap {
+      margin-left: 8px;
+      font-size: 14px;
+      color: #ffffff;
     }
   }
-}
-
-#writtenby {
-  font-family: 'Josefin Sans', sans-serif;
-  padding: 30px;
-  background-color: $text;
-  border-radius: 0px 0px 30px 30px/ 0px 0px 30px 30px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-
-  #wbwrap {
-    width: 350px;
-    margin-bottom: 20px;
-  }
-
-  #wb {
-    font-size: large;
-    color: $accent;
-  }
-
-  #auther {
-    margin: 12px;
+  .information {
+    padding: 0 24px;
+    margin-bottom: 12px;
     display: flex;
-
-    #authericon {
-      background-image: url("@/assets/mitori.png");
-      background-size: contain;
-      width: 80px;
-      height: 80px;
-      border-radius: 40px;
-    }
-
-    #autherprofile {
-      margin-left: 12px;
-      color: $base;
-
-      #authername {
-        font-size: 3.2vh;
-      }
-
-      #autherbio {
-        margin-left: 12px;
-        font-size: 2vh;
-      }
-    }
-  }
-
-  #rawrap {
-    width: 350px;
-  }
-
-  #ra {
-    font-size: large;
-    color: $accent;
-  }
-
-  #rarticle {
-    display: flex;
-    flex-flow: column nowrap;
+    flex-direction: row;
+    justify-content: flex-end;
     gap: 16px;
-  }
-}
-
-.ralinker {
-  display: flex;
-  margin-top: 12px;
-  height: 80px;
-  border: 2px solid $base;
-  border-radius: 20px;
-
-  .rarticleimg {
-    background-size: contain;
-    width: 80px;
-    height: 80px;
-    margin-top: -2px;
-    margin-left: -2px;
-    border-radius: 20px;
-  }
-
-  .rarticledetail {
-    font-family: sans-serif;
-    margin-left: 12px;
-    color: $base;
-
-    .rarticletitle {
-      font-size: 2.7vh;
-      font-weight: bold;
+    .writtenby {
+      margin-top: 4px;
+      font-family: "Dela Gothic One";
+      font-size: 20px;
     }
-
-    .rarticletext {
-      margin-left: 12px;
-      font-size: 2vh;
+    .authericon {
+      width: 48px;
+      height: 48px;
+      border-radius: 100%;
+    }
+    .autherinfo {
+      .auther {
+        display: flex;
+        gap: 12px;
+        font-family: "Dela Gothic One";
+        font-size: 20px;
+      }
+      .bio {
+        font-family: sans-serif;
+        font-size: 12px;
+      }
     }
   }
+  .disqus {
+    padding: 12px 24px 24px;
+  }
+  .relateds {
+    padding: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    .articlewrapper {
+      width: 210px;
+      border-radius: 8px;
+      .articleimg {
+        border-radius: 8px;
+      }
+      .articletitle {
+        font-weight: bold;
+        padding: 12px;
+        height: 80px;
+      }
+    }
+  }
+  .capt {
+    padding: 0 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .icon {
+    display: inline-flex;
+    align-items: center;
+  }
+  .emp {
+    font-family: "Dela Gothic One";
+    font-size: 36px;
+  }
+  .ruler {
+    flex-grow: 1;
+    height: 6px;
+    margin-left: 24px;
+    border-radius: 2px;
+  }
+  .front {
+    position: relative;
+    z-index: 1;
+  }
+  .prel {
+    position: relative;
+  }
+  .wmax {
+    width: 100%;
+  }
+  .w960 {
+    max-width: 960px;
+  }
+  .w1280 {
+    max-width: 1280px;
+  }
+  .center {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
-
 a {
   text-decoration: none;
 }

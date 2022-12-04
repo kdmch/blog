@@ -29,7 +29,11 @@ export default {
       { hid: 'twitter:card',  name: 'twitter:card',      content: 'summary_large_image' },
       { hid: 'twitter:site',  name: 'twitter:site',      content: '@mitorime' },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'preconnect', href: 'https://fonts/gstatic.com' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap' }
+    ]
   },
 
   router:{
@@ -53,6 +57,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    '~/plugins/disqus'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components

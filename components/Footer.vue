@@ -1,10 +1,11 @@
 <template>
   <div id="footer">
-    <div id="gw-tl">
-      <img id="logo" src="mitorime.png"/>
+    <div id="texts">
+      <v-img :src="require('../assets/mitorime.png')" id="logo"/>
       <div id="caption">
         <p>Powered by Nuxt.js</p>
         <p>内容についてのお問い合わせは Twitter @mitorime まで。</p>
+        <a href="https://github.com/kdmch/blog/" class="txgrey">View repository on GitHub</a>
       </div>
       <div id="copyright"> ©︎ 2022 mitori </div>
     </div>
@@ -17,22 +18,21 @@ export default {
 </script>
 
 <style scoped lang="scss">
-  @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
   @import "assets/cssvar.scss";
   #footer {
     position: relative;
     width: 100%;
-    background-color: $text;
-    #gw-tl {
+    background-color: $bgblack;
+    #texts {
       display: flex;
       flex-flow: column nowrap;
-      padding-top: 60px;
+      padding-top: 12px;
       padding-bottom: 40px;
-      color: $accent;
-      font-size: medium;
+      color: $grey;
+      font-size: 16px;
       #logo {
-        width: 150px;
-        height: 50px;
+        width: 120px;
+        height: 40px;
         margin: auto;
       }
       #caption {
@@ -42,18 +42,10 @@ export default {
       #copyright {
         margin-top: 20px;
         text-align: center;
-        font-family: 'Josefin Sans', sans-serif;
+        font-family: 'Dela Gothic One';
         font-size: large;
-        color: $base;
+        color: $white;
       }
-
     }
-  }
-  .maintitle {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: large;
-  }
-  a {
-    text-decoration: none;
   }
 </style>

@@ -1,4 +1,43 @@
-  $base: #dff2ff;
-  $accent: #ffc3d8;
-  $text: #dd5b9c;
-  $deep: #5195fe;
+$base: #dff2ff;
+$accent: #ffc3d8;
+$text: #dd5b9c;
+$deep: #5195fe;
+
+$bgblack: #2c3049;
+$txblack: #3d4054;
+$pink: #dd5b9c;
+$white: #e8f2f5;
+$grey: #9b9dbb;
+$palegrey: #d6dae5;
+
+.txwhite {
+  color: $white;
+}
+.txgrey {
+  color: $grey;
+}
+.txpalegrey {
+  color: $palegrey;
+}
+.txpink {
+  color: $pink;
+}
+.txblack{
+  color: $txblack;
+}
+
+.bgwhite {
+  background-color: $white;
+}
+.bggrey {
+  background-color: $grey;
+}
+.bgpalegrey {
+  background-color: $palegrey;
+}
+.bgpink {
+  background-color: $pink;
+}
+.bgblack {
+  background-color: $bgblack;
+}
