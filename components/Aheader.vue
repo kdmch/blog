@@ -1,6 +1,6 @@
 <template>
 <div id="wrapper" class="wmax">
-  <div class="bgrect wmax bgpink" />
+  <!--<div class="bgrect wmax bgpink" />-->
   <div class="header">
     <div class="eyecatch">
       <v-img :src="caps.image" class="eyecatchimage"/>
@@ -67,6 +67,7 @@ export default {
   width: 100%;
   .bgrect {
     position: absolute;
+    overflow: clip;
     top: 0;
     left: 0;
     height: 260px;
@@ -105,6 +106,8 @@ export default {
       margin-top: 20px;
       display: flex;
       justify-content: space-between;
+      flex-flow: wrap;
+      gap: 12px;
       .autherinfo {
         height: 48px;
         display: flex;

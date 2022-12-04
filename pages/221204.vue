@@ -34,7 +34,7 @@ export default {
         description: '',
         type: 'article',
         url: 'https://mitori.me/221204',
-        image: 'https://raw.githubusercontent.com/kdmch/blog/master/static/img/thumbnail/221204.png'
+        image: 'https://raw.githubusercontent.com/kdmch/blog/master/static/img/thumbnails/221204.png'
       },
       infocaps: {
         comments: true,
@@ -44,7 +44,7 @@ export default {
         tags: ['このサイトについて'],
         description: 'やっと終わった……終わってないけど……',
         url: 'https://mitori.me/221204',
-        image: 'https://raw.githubusercontent.com/kdmch/blog/master/static/img/thumbnail/221204.png',
+        image: 'https://raw.githubusercontent.com/kdmch/blog/master/static/img/no-image.png',
         auther: 'mitori',
         authericon: 'https://raw.githubusercontent.com/kdmch/blog/master/static/icons/mitori.png',
         twitter: 'https://twitter.com/mitorime',
@@ -53,7 +53,7 @@ export default {
           no: 1,
           title: 'あくなれ',
           url: '/acknowledgement',
-          image: 'https://raw.githubusercontent.com/kdmch/blog/master/static/img/thumbnail/ackl.png'
+          image: 'https://raw.githubusercontent.com/kdmch/blog/master/static/img/thumbnails/ackl.png'
         }]
       }
     }

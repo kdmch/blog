@@ -9,7 +9,7 @@
 
           </div>
           <nuxt-link :to="article.path" v-for="article in articles" :key="article.no" tag="div" class="article-link encl bgwhite">
-            <v-img :src="article.image" max-width="120px" class="article-img"/>
+            <v-img :src="article.image" max-width="80px" class="article-img"/>
             <div class="article-detail">
               <div class="article-title txblack">{{ article.title }}</div>
               <div class="article-info wmax txgrey">

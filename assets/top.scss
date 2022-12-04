@@ -30,7 +30,6 @@
       .article-link {
         display: flex;
         padding: 20px;
-        min-width: 600px;
         max-width: 960px;
         min-height: 160px;
         &:hover {
@@ -41,7 +40,7 @@
         &:hover .article-info { color: $txblack; }
         &:hover .article-text { color: $txblack; }
         .article-img {
-          height: 120px;
+          max-height: 80px;
           border-radius: 10px;
         }
         .article-detail {
