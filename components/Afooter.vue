@@ -5,12 +5,11 @@
         <v-icon color="#ffffff" small class="icon"> mdi-twitter </v-icon>
         <div class="twittercap icon">ツイート</div>
       </div>
-      <!--<div class="bgprg prel wmax bgblack" />-->
-      <div class="information prel wmax front">
+      <div class="information prel wmax front bgblack">
         <div class="writtenby txgrey">Written by</div>
         <v-img :src="caps.authericon" max-width="48px" class="authericon" />
         <div class="autherinfo">
-          <div class="auther txblack">
+          <div class="auther txwhite">
             {{ caps.auther }}
             <a href="https://twitter.com/mitorime" class="icon">
               <v-icon color="#1da1f2"> mdi-twitter </v-icon>
@@ -25,7 +24,6 @@
     <div class="prel wmax bgblack">
       <div class="center front w1280">
         <div :v-show="caps.comments == true">
-          <div class="emg-blank bgblack" />
           <div class="capt">
             <div class="emp txgrey">コメントを書く</div>
             <div class="ruler bggrey" />
@@ -77,13 +75,6 @@ export default {
 
 #wrapper {
   margin-top: 32px;
-  .bgprg {
-    z-index: 0;
-    height: 30px;
-    overflow: clip;
-    transform-origin: top center;
-    transform: scale(1) rotate(-5deg);
-  }
   .twittershare {
     margin: 32px auto 64px;
     display: flex;
@@ -100,8 +91,7 @@ export default {
     }
   }
   .information {
-    padding: 0 24px;
-    margin-bottom: 12px;
+    padding: 12px 24px;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -189,9 +179,6 @@ export default {
   .center {
     margin-left: auto;
     margin-right: auto;
-  }
-  .emg-blank {
-    height: 32px;
   }
 }
 a {

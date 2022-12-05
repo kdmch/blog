@@ -58,7 +58,8 @@ export default {
 
   data () {
     return {
-      page: this.$route.query.p,
+      page: 0,
+      pagequery: this.$route.query.p,
       pagemax: 0,
       meta: {
         title: 'ミトリメ | ミ的雑記',
@@ -99,8 +100,10 @@ export default {
       ]
     }
   },
-  methods () {
-
+  created () {
+    if (this.pagequery != null) {
+      this.page = this.pagequery
+    }
   }
 }
 </script>
