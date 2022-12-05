@@ -1,6 +1,6 @@
 <template>
   <div id="wrapper" class="wmax">
-    <div class="center w960">
+    <div class="center w1280">
       <div class="twittershare front" @click="twitterShare">
         <v-icon color="#ffffff" small class="icon"> mdi-twitter </v-icon>
         <div class="twittercap icon">ツイート</div>

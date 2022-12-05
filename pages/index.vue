@@ -6,7 +6,8 @@
       <div id="articles">
         <div id="wrap" class="prel">
           <div v-if="page == 0" class="pick-up encl">
-
+            <div class="pu-title txgrey">ここは何</div>
+            <div class="pu-capt txgrey">好き勝手書くブログです。お手柔らかに。</div>
           </div>
           <nuxt-link :to="article.path" v-for="article in articles" :key="article.no" tag="div" class="article-link encl bgwhite">
             <v-img :src="article.image" max-width="80px" class="article-img"/>

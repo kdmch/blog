@@ -25,7 +25,17 @@
       font-family: sans-serif;
       border-radius: 30px;
       .pick-up {
-        height: 480px;
+        padding: 24px 40px;
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 12px;
+        .pu-title {
+          font-weight: bold;
+          font-size: 20px;
+        }
+        .pu-capt {
+          font-size: 18px;
+        }
       }
       .article-link {
         display: flex;
@@ -98,7 +108,7 @@
     max-width: 320px;
     min-width: 320px;
     max-height: max-content;
-    padding:  24px 40px;
+    padding: 24px 40px;
     border: solid 2px;
     border-color: $palegrey;
     border-radius: 30px;
