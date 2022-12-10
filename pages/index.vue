@@ -9,7 +9,7 @@
             <div class="pu-title txgrey">ここは何</div>
             <div class="pu-capt txgrey">好き勝手書くブログです。お手柔らかに。</div>
           </div>
-          <nuxt-link :to="article.path" v-for="article in articles" :key="article.no" tag="div" class="article-link encl bgwhite">
+          <nuxt-link :to="article.path" v-for="article in articles.slice(page * amount, (page+1) * amount)" :key="article.no" tag="div" class="article-link encl bgwhite">
             <v-img :src="article.image" max-width="80px" class="article-img"/>
             <div class="article-detail">
               <div class="article-title txblack">{{ article.title }}</div>
@@ -55,12 +55,14 @@
 </template>
 
 <script>
-export default {
+import Articles from '@/assets/articles.json'
 
+export default {
   data () {
     return {
       page: 0,
       pagequery: this.$route.query.p,
+      amount: 3,
       pagemax: 0,
       meta: {
         title: 'ミトリメ | ミ的雑記',
@@ -69,23 +71,7 @@ export default {
         url: 'https://mitori.me/',
         image: 'https://raw.githubusercontent.com/kdmch/blog/master/assets/cover.png'
       },
-      articles: [{
-        no: 1,
-        title: 'ブログを公開しました',
-        caption: 'やっと終わった……終わってないけど……',
-        date: '2022.12.04',
-        path: '/221204',
-        image: 'img/default.png',
-        tags: ['このサイトについて']
-      }, {
-        no: 2,
-        title: 'あくなれ',
-        caption: '感謝の意',
-        date: '2022.12.04',
-        path: '/acknowledgement',
-        image: 'img/default.png',
-        tags: ['このサイトについて']
-      }]
+      articles: Articles
     }
   },
   head () {
@@ -101,9 +87,12 @@ export default {
       ]
     }
   },
-  created () {
+  mounted () {
     if (this.pagequery != null) {
       this.page = this.pagequery
+    }
+    if (this.page > this.pagemax) {
+      this.page = this.pagemax
     }
   }
 }

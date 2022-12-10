@@ -5,19 +5,19 @@
         <v-icon color="#ffffff" small class="icon"> mdi-twitter </v-icon>
         <div class="twittercap icon">ツイート</div>
       </div>
-      <div class="information prel wmax front bgblack">
-        <div class="writtenby txgrey">Written by</div>
-        <v-img :src="caps.authericon" max-width="48px" class="authericon" />
-        <div class="autherinfo">
-          <div class="auther txwhite">
-            {{ caps.auther }}
-            <a href="https://twitter.com/mitorime" class="icon">
-              <v-icon color="#1da1f2"> mdi-twitter </v-icon>
-            </a>
-          </div>
-          <div class="bio txgrey">
-            {{ caps.bio }}
-          </div>
+    </div>
+    <div class="information prel wmax front bgblack">
+      <div class="writtenby txgrey">Written by</div>
+      <v-img :src="caps.authericon" max-width="48px" class="authericon" />
+      <div class="autherinfo">
+        <div class="auther txwhite">
+          {{ caps.auther }}
+          <a href="https://twitter.com/mitorime" class="icon">
+            <v-icon color="#1da1f2"> mdi-twitter </v-icon>
+          </a>
+        </div>
+        <div class="bio txgrey">
+          {{ caps.bio }}
         </div>
       </div>
     </div>

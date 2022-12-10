@@ -6,13 +6,13 @@
 
 .line {
   margin: 8px 20px 36px 0px;
-  height: 7px;
-  border-radius: 2px;
+  height: 4px;
+  border-radius: 1px;
   background: $txblack;
 }
 .pinkline {
   margin: 8px 20px 36px 0px;
-  height: 7px;
+  height: 6px;
   border-radius: 2px;
   background: $pink;
 }
@@ -56,33 +56,27 @@ ul {
   }
 }
 h1 {
-  margin: 20px auto 0px 20px;
-  font-size: 36px;
+  font-size: 28px;
   color: $pink;
 }
 h2 {
-  margin: 20px auto 0px 20px;
-  font-size: 36px;
-}
-h3 {
-  margin: 20px auto 0px 20px;
-  font-size: 32px;
-}
-h4 {
-  margin: 20px auto 0px 20px;
   font-size: 28px;
 }
-h5 {
-  margin: 20px auto 0px 20px;
+h3 {
+  font-size: 26px;
+}
+h4 {
   font-size: 24px;
 }
+h5 {
+  font-size: 22px;
+}
 h6 {
-  margin: 20px auto 0px 20px;
-  font-size: 24px;
+  font-size: 20px;
   color: $grey;
 }
 p {
-  font-size: 18px;
+  font-size: 16px;
   .link {
     color: $deep;
     text-decoration: none;

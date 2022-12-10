@@ -2,8 +2,8 @@
   <v-app>
     <div id="bg" />
     <Header />
+    <Aheader :caps="infocaps" />
     <div id="main">
-      <Aheader :caps="infocaps" />
       <div id="text">
         <h2>acknowledgement</h2>
         <div class="blank" />

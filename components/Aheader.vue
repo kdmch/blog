@@ -100,12 +100,12 @@ export default {
       max-width: 1280px;
       #title {
         font-family: 'Dela Gothic One';
-        font-size: 48px;
+        font-size: 36px;
       }
       .tags {
         display: flex;
         font-family: 'Dela Gothic One';
-        font-size: 20px;
+        font-size: 18px;
         gap: 12px;
       }
       .information {
@@ -125,14 +125,14 @@ export default {
           .auther {
             margin-top: 4px;
             font-family: 'Dela Gothic One';
-            font-size: 24px;
+            font-size: 20px;
           }
         }
         .description {
           max-width: 540px;
           margin-left: 12px;
           font-family: sans-serif;
-          font-size: 18px;
+          font-size: 16px;
         }
       }
     }
