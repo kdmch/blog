@@ -32,10 +32,10 @@ export default {
     return {
       meta: {
         title: '初めてサッカーちゃんと観た | ミトリメ',
-        description: '',
+        description: '嘘です。ちゃんとと言っても頭からケツまでテレビを消さなかったというだけで',
         type: 'article',
         url: 'https://mitori.me/221210',
-        image: 'https://raw.githubusercontent.com/kdmch/blog/master/static/img/thumbnail/221210.png'
+        image: 'https://raw.githubusercontent.com/kdmch/blog/master/static/img/thumbnails/221210.png'
       },
       infocaps: {
         comments: true,
