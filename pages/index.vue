@@ -55,7 +55,7 @@
 </template>
 
 <script>
-import Articles from '@/assets/articles.json'
+import Articles from '~/assets/articles.json'
 
 export default {
   data () {
