@@ -31,7 +31,7 @@ export default {
     return {
       meta: {
         title: '睡眠時間 | ミトリメ',
-        description: '私はちょ〜〜〜〜〜〜〜〜〜若いので(19歳)、睡眠の可撓性がすごい。フレキシブル睡眠だ。特に土日は。なお、身体にはすげ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜悪い。具体的には上図の通りだ。金曜日のだいたい18時頃にひと通りの社会参加活動を終えて帰宅し',
+        description: '私はちょ〜〜〜〜〜〜〜〜〜若いので(19歳)、睡眠の可撓性がすごい。フレキシブル睡眠だ。特に土日は。なお、身体にはすげ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜悪い。具体的には以下の通りである。金曜日のだいたい18時頃にひと通りの社会参加活動を終えて帰宅し',
         type: 'article',
         url: 'https://mitori.me/221212',
         image: 'https://raw.githubusercontent.com/kdmch/blog/master/static/img/thumbnails/221212.png'
