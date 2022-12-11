@@ -62,7 +62,7 @@ export default {
     return {
       page: 0,
       pagequery: this.$route.query.p,
-      amount: 3,
+      amount: 5,
       pagemax: 0,
       meta: {
         title: 'ミトリメ | ミ的雑記',
