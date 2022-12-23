@@ -91,6 +91,3 @@ sw.*
 
 # VSCode config
 .vscode/
-
-# Template File
-mtrm-templates
