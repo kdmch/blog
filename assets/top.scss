@@ -117,10 +117,6 @@
       display: flex;
       flex-flow: column nowrap;
       gap: 12px;
-      .sidebar-title {
-        font-weight: bold;
-        font-size: 20px;
-      }
       .sidebar-auther {
         display: flex;
         gap: 12px;
@@ -153,6 +149,15 @@
   border: solid 2px;
   border-color: $palegrey;
   border-radius: 30px;
+}
+.tx20 {
+  font-size: 20px;
+}
+.tx15 {
+  font-size: 15px;
+}
+.txcenter {
+  text-align: center;
 }
 a {
   text-decoration: none;

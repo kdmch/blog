@@ -9,6 +9,7 @@
             <div class="pu-title txgrey">ここは何</div>
             <div class="pu-capt txgrey">好き勝手書くブログです。お手柔らかに。</div>
           </div>
+          <div class="tx20 txgrey bold">新着記事</div>
           <nuxt-link :to="article.path" v-for="article in articles.slice(page * amount, (page+1) * amount)" :key="article.no" tag="div" class="article-link encl bgwhite">
             <v-img :src="article.image" max-width="80px" class="article-img"/>
             <div class="article-detail">
@@ -29,11 +30,12 @@
             <button v-on:click=" page++ " v-if="page < pagemax" class="page-button encl">{{ page+2 }}</button>
             <button v-on:click=" page=pagemax " v-if="page < pagemax" class="page-button encl"> ▶︎ </button>
           </div>
+          <div class="tx15 txgrey txcenter">最新の25件を表示しています。</div>
         </div>
       </div>
       <div id="sidebar">
         <div class="sidebar-wrapper prel wmax">
-          <div class="sidebar-title txgrey">書いてる人</div>
+          <div class="tx20 txgrey bold">書いてる人</div>
           <div class="sidebar-auther wmax">
             <v-img src="/icons/mitori.png" max-width="48px" class="sidebar-auther-icon" />
             <div class="sidebar-auther-name txblack">mitori</div>
