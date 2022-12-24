@@ -2,6 +2,7 @@
   <v-app>
     <div id="bg" />
     <Header />
+    <Button />
     <Aheader :caps="infocaps" />
     <div id="main">
       <div id="text">

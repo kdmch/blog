@@ -97,7 +97,7 @@ export default {
       }
     }
     .meta-info {
-      max-width: 1280px;
+      padding: 0 48px;
       #title {
         font-family: 'Dela Gothic One';
         font-size: 36px;
@@ -109,12 +109,11 @@ export default {
         gap: 12px;
       }
       .information {
-        max-width: 1280px;
         margin-top: 20px;
         display: flex;
         justify-content: space-between;
         flex-flow: wrap;
-        gap: 12px;
+        gap: 16px;
         .autherinfo {
           height: 48px;
           display: flex;
@@ -129,8 +128,7 @@ export default {
           }
         }
         .description {
-          max-width: 540px;
-          margin-left: 12px;
+          text-align: right;
           font-family: sans-serif;
           font-size: 16px;
         }

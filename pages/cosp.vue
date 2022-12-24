@@ -2,8 +2,9 @@
   <v-app>
     <div id="bg" />
     <Header />
+    <Button />
+    <Aheader :caps="infocaps" />
     <div id="main">
-      <Aheader :caps="infocaps" />
       <div id="text">
         <h1>はじめまして</h1>
         <br>

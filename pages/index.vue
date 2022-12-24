@@ -2,6 +2,7 @@
   <v-app>
     <div id="bg" class="bgwhite" />
     <Header />
+    <Button />
     <div id="main" class="prel">
       <div id="articles">
         <div id="wrap" class="prel">

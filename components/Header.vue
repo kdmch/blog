@@ -1,8 +1,12 @@
 <template>
-  <div id="header">
+  <div id="header" class="bgpink">
     <nuxt-link to="./">
       <v-img :src="require('../assets/mitorime.png')" id="logo" />
     </nuxt-link>
+    <div class="theme-desc">
+      <v-icon color="#ffffff">mdi-shimmer</v-icon>
+      <div class="theme-msg">Merry Christmas!</div>
+    </div>
   </div>
 </template>
 
@@ -21,16 +25,22 @@ export default {
     height: 64px;
     padding: 8px;
     display: flex;
-    flex-direction: row;
-    background-color: $pink;
+    justify-content: space-between;
     #logo {
       margin-left: 30px;
       width: 144px;
       height: 48px;
     }
-  }
-
-  a {
-    text-decoration: none;
+    .theme-desc {
+      margin-right: 24px;
+      display: flex;
+      gap: 16px;
+      .theme-msg {
+        color: #ffffff;
+        font-weight: bold;
+        display: inline-flex;
+        align-items: center;
+      }
+    }
   }
 </style>
