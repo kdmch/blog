@@ -4,8 +4,8 @@
       <v-img :src="require('../assets/mitorime.png')" id="logo" />
     </nuxt-link>
     <div class="theme-desc">
-      <v-icon color="#ffffff">mdi-shimmer</v-icon>
-      <div class="theme-msg">Merry Christmas!</div>
+      <v-icon color="#ffffff">mdi-rabbit</v-icon>
+      <div class="theme-msg">akeome?</div>
     </div>
   </div>
 </template>
