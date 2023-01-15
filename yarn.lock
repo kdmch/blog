@@ -5022,6 +5022,11 @@ inquirer@^7.3.3:
     strip-ansi "^6.0.0"
     through "^2.3.6"
 
+install@^0.13.0:
+  version "0.13.0"
+  resolved "https://registry.yarnpkg.com/install/-/install-0.13.0.tgz#6af6e9da9dd0987de2ab420f78e60d9c17260776"
+  integrity sha512-zDml/jzr2PKU9I8J/xyZBQn8rPCAY//UOYNmR01XwNwyfhEWObo2SWfSl1+0tm1u6PhxLwDnfsT/6jB7OUxqFA==
+
 internal-slot@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/internal-slot/-/internal-slot-1.0.3.tgz#7347e307deeea2faac2ac6205d4bc7d34967f59c"
@@ -8938,6 +8943,11 @@ vue-client-only@^2.0.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/vue-client-only/-/vue-client-only-2.1.0.tgz#1a67a47b8ecacfa86d75830173fffee3bf8a4ee3"
   integrity sha512-vKl1skEKn8EK9f8P2ZzhRnuaRHLHrlt1sbRmazlvsx6EiC3A8oWF8YCBrMJzoN+W3OnElwIGbVjsx6/xelY1AA==
+
+vue-disqus@^4.0.0:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/vue-disqus/-/vue-disqus-4.0.1.tgz#9ec040c575f3b87f3ef4bf43477ff20f06cc57dc"
+  integrity sha512-LCmEF4UqLMmMZaZwdMWZ5OO0imu/Cy0pZcr7c0QV7iJk1H9VWKUyxqO7+NNY8hhlAQXTdEq+Hv5tzOA9CfpjdA==
 
 vue-eslint-parser@^8.0.1, vue-eslint-parser@^8.3.0:
   version "8.3.0"
