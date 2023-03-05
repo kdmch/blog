@@ -5,7 +5,7 @@
     </nuxt-link>
     <div class="theme-desc">
       <v-icon color="#ffffff">mdi-rabbit</v-icon>
-      <div class="theme-msg">akeome?</div>
+      <div class="theme-msg">dying wip.</div>
     </div>
   </div>
 </template>
