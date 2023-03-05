@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/mitori
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://mitori.me
+  * I am mitori (https://keybase.io/mitori) on keybase.
+  * I have a public key ASDevS18fyrVb8_vN-Al7bfzsfOfgLq7PeyERXCzSK_mJwo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120debd2d7c7f2ad56fcfef37e025edb7f3b1f39f80babb3dec844570b348afe6270a",
+      "host": "keybase.io",
+      "kid": "0120debd2d7c7f2ad56fcfef37e025edb7f3b1f39f80babb3dec844570b348afe6270a",
+      "uid": "c6b295822f30192b645b3ec06154fd19",
+      "username": "mitori"
+    },
+    "merkle_root": {
+      "ctime": 1678034063,
+      "hash": "f50284f3acfb9af4f7f546cb5ab6e127b90cfa52ceb5c19e45a78abc6d867e71dbc724b75807f2c88e31a1af6d07079bcfe98ff7c36563405ef4e635adb9a59f",
+      "hash_meta": "58d1c6878e1cb20efc12d9220eed0c208d494ca9dde8e93fe12ce005e3da8cf7",
+      "seqno": 24149742
+    },
+    "service": {
+      "entropy": "DrjRJIXTvf+sN5RI4zDPLL24",
+      "hostname": "mitori.me",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "6.0.1"
+  },
+  "ctime": 1678034098,
+  "expire_in": 504576000,
+  "prev": "88f34c831f4f878ae105cbc4a5359c45bcc0ace8ca8d59ff99d9fd0a370e2f6d",
+  "seqno": 8,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg3r0tfH8q1W/P7zfgJe2387Hzn4C6uz3shEVws0iv5icKp3BheWxvYWTESpcCCMQgiPNMgx9Ph4rhBcvEpTWcRbzArOjKjVn/mdn9CjcOL23EIL74m+JDkcy1popkjH9+U6bThozMrZuFYrZOTZBOgajQAgHCo3NpZ8RAD/m5cKWJfRm7FVPjDM0vdkFD0arNLfDfo01195ZQAPqNa490sjxyHymJKbPAIivmrmo1Q10/CNEDvG0u0pXRC6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEILI35jpZEabufdfBfygu74+odAWfcpqeW1rgzuAOJ+5do3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/mitori
+
+==================================================================
