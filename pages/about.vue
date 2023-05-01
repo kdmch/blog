@@ -85,7 +85,7 @@ export default {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  padding: 100px 20px;}
+  padding: 100px 32px;}
     .tweet {
       max-width: 480px;
       color: #0f1419;}
