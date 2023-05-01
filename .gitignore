@@ -91,3 +91,6 @@ sw.*
 
 # VSCode config
 .vscode/
+
+# Playground
+pages/ui-test.vue
