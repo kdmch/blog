@@ -2,7 +2,7 @@
   <v-app>
     <div id="bg" class="bgwhite" />
     <Header />
-    <Button />
+    <Topbutton />
     <div id="main" class="prel">
       <div id="articles">
         <div id="wrap" class="prel">
@@ -25,11 +25,11 @@
             </div>
           </nuxt-link>
           <div class="page-buttons txgrey">
-            <button v-on:click=" page=0 " v-if="page > 0" class="page-button encl"> ◀︎ </button>
-            <button v-on:click=" page-- " v-if="page > 0" class="page-button encl">{{ page }}</button>
+            <button @click=" page=0 " v-if="page > 0" class="page-button encl"> ◀︎ </button>
+            <button @click=" page-- " v-if="page > 0" class="page-button encl">{{ page }}</button>
             <div class="page-current txgrey bgpalegrey">{{ page+1 }}</div>
-            <button v-on:click=" page++ " v-if="page < pagemax" class="page-button encl">{{ page+2 }}</button>
-            <button v-on:click=" page=pagemax " v-if="page < pagemax" class="page-button encl"> ▶︎ </button>
+            <button @click=" page++ " v-if="page < pagemax" class="page-button encl">{{ page+2 }}</button>
+            <button @click=" page=pagemax " v-if="page < pagemax" class="page-button encl"> ▶︎ </button>
           </div>
           <div class="tx15 txgrey txcenter">最新の25件を表示しています。</div>
         </div>

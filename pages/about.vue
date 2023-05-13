@@ -12,12 +12,12 @@
             <v-row class="nowrap">
               <div class="username">みとり</div>
               <div class="screenname">&nbsp;@mitorime&nbsp;</div>
-              <div class="twdate">·&nbsp;2023/05/07</div>
+              <div class="twdate">·&nbsp;2023/05/14</div>
             </v-row>
           </a>
           <v-row>
             <div class="twmain">
-              <div><v-icon small color="#1995e0" class="icon">mdi-twitter</v-icon>ごちゃまぜのアカウントです。</div>
+              <div><v-icon small color="#1995e0" class="icon">mdi-shimmer</v-icon>ごちゃまぜのアカウントです。</div>
               <div>アグネスタキオン/言語学/ボカロ/プログラミング/作曲/絵/コスプレ(する方)/道路/ピノキオピー/原神/凋叶棕/音ゲー/短歌/デザイン/いろいろ</div>
               <br>
               <div><v-icon small color="#1995e0" class="icon">mdi-antenna</v-icon>閲覧垢です→<a href="https://twitter.com/laykatase" target="_blank" rel="noopener noreferrer" class="twlink">@laykatase</a></div>
@@ -30,6 +30,28 @@
               <div><v-icon small color="#1995e0" class="icon">mdi-lock</v-icon>縮小→<a href="https://twitter.com/zilitz" target="_blank" rel="noopener noreferrer" class="twlink">@zilitz</a></div>
               <div>FFなら高確率で通ります。思考の吐き溜め。自己責任で。</div>
               <br>
+              <div><v-icon small color="#1995e0" class="icon">mdi-lipstick</v-icon>たまにコスプレをするよ</div>
+              <div>ド初心者レイヤーにつき……</div>
+              <div>イベント出たりするのは3ヶ月に1回とか……？頻度はそこまで多くないです。おてやわらかに……</div>
+              <div>やったやつ: <v-icon small color="#0f1419" class="icon">mdi-star-four-points</v-icon>ウェンティ/放浪者/<v-icon small color="#0f1419" class="icon">mdi-horseshoe</v-icon>アグネスタキオン</div>
+              <br>
+              <div><v-icon small color="#1995e0" class="icon">mdi-camera-account</v-icon>カメラマンさんへ</div>
+              <div>無断での撮影はお控えください！</div>
+              <div>お声がけいただければ応じます。お気軽に！</div>
+              <div><b>重要:</b>&nbsp;お写真いただけても、(アカウントの方針的に)載せられないことが多いです！すみません。</div>
+              <div>いただいた写真は手元で大切に保管してます。毎度ありがとうございます……</div>
+              <br>
+              <div><v-icon small color="#1995e0" class="icon">mdi-brush</v-icon>絵やら曲やらをたまーに上げますが</div>
+              <div>著作権ほぼ放棄でやってるので、素材にするのもAI学習も無断転載もそのまま複製して売るのも完全OK！あなたのものです。自由にしてください！</div>
+              <v-row class="cap-container">
+                <a href="https://elaws.e-gov.go.jp/document?lawid=345AC0000000048" target="_blank" rel="noopener noreferrer">
+                  <div class="cap-normal shadow">
+                    <div><v-icon small color="#c10600" class="icon">mdi-alert</v-icon><b>&nbsp;自作発言と、誰かを攻撃する目的では使用しないでね！</b></div>
+                    <div>また、ごく稀にコスプレ写真が上がりますが、<b>こちらは転載不可です！著作権ってだいじ！</b></div>
+                  </div>
+                </a>
+              </v-row>
+              <br>
               <div><v-icon small color="#1995e0" class="icon">mdi-link-variant</v-icon>その他リンク</div>
               <div><a href="https://mitori.me" target="_blank" rel="noopener noreferrer" class="twlink"><v-icon small color="#1995e0" class="icon">mdi-web</v-icon>blog: ミトリメ(mitori.me)&nbsp;<v-icon small color="#1995e0" class="icon">mdi-open-in-new</v-icon></a></div>
               <div><a href="mailto:mail@mitori.me" target="_blank" rel="noopener noreferrer" class="twlink"><v-icon small color="#1995e0" class="icon">mdi-email</v-icon>email: mailあっとmitori.me&nbsp;<v-icon small color="#1995e0" class="icon">mdi-open-in-new</v-icon></a></div>
@@ -38,19 +60,6 @@
               <div class="twlink" @click="copyTag('mitori#5200')"><v-icon small color="#1995e0" class="icon">mdi-chat</v-icon>Discord: mitori#5200&nbsp;<v-icon small color="#1995e0" class="icon">mdi-content-copy</v-icon></div>
               <div class="twlink" @click="copyTag('mitorik')"><v-icon small color="#1995e0" class="icon">mdi-virtual-reality</v-icon>VRChat: mitorik&nbsp;<v-icon small color="#1995e0" class="icon">mdi-content-copy</v-icon></div>
               <div class="twlink" @click="copyTag('858144259')"><v-icon small color="#1995e0" class="icon">mdi-star-four-points</v-icon>原神: 858144259&nbsp;<v-icon small color="#1995e0" class="icon">mdi-content-copy</v-icon></div>
-              <br>
-              <div><v-icon small color="#1995e0" class="icon">mdi-brush</v-icon>絵やら曲やらをたまーに上げますが</div>
-              <div>著作権ほぼ放棄でやってるので、素材にするのもAI学習も無断転載も自作発言もそのまま複製して売るのも完全OK！あなたのものです。自由にしてください！</div>
-              <v-row class="cap-container">
-                <a href="https://elaws.e-gov.go.jp/document?lawid=345AC0000000048" target="_blank" rel="noopener noreferrer">
-                  <div class="cap-normal shadow">
-                    <div><v-icon small color="#c10600" class="icon">mdi-alert</v-icon><b>&nbsp;ただし、特定個人・団体やすべての宗教的・政治的思想を称揚または攻撃する目的では使用しないでください。</b></div>
-                    <div>また、ごく稀にコスプレ写真が上がりますが、<b>こちらは転載不可になります。著作権を侵害しない範囲での私的利用に留めてください。</b></div>
-                    <div>上記を逸脱した使用に関しては、発見次第しかるべき措置をとります。</div>
-                  </div>
-                </a>
-              </v-row>
-              <div>クオリティがアレなものしか作れてないけど、こういうのはしっかり言っておくべきですね……</div>
               <br>
             </div>
           </v-row>
@@ -71,7 +80,7 @@
 
 <script>
 export default {
-  data () {
+  data() {
     return {
       meta: {
         title: '固定されたツイート',
@@ -83,7 +92,7 @@ export default {
       show: false
     }
   },
-  head () {
+  head() {
     return {
       title: this.meta.title,
       meta: [
@@ -98,7 +107,7 @@ export default {
     }
   },
   methods: {
-    copyTag (tagstr) {
+    copyTag(tagstr) {
       navigator.clipboard.writeText(tagstr)
       // this.show = true
     }
