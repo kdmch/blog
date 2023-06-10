@@ -7,8 +7,11 @@
 <script>
 export default {
   methods: {
-    scrollTop() {
-      window.scrollTo(0, 0)
+    scrollTop () {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      })
     }
   }
 }
@@ -19,10 +22,15 @@ export default {
 #wrapper {
   .scroll-button {
     position: fixed;
-    z-index: 1;
+    z-index: 5;
     right: 20px;
     bottom: 20px;
     border-radius: 12px;
+    transition: transform 0.1s ease;
+    box-shadow: 0px 0px 20px #dd5b9c66;
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 }
 </style>

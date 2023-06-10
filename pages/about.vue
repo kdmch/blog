@@ -80,7 +80,7 @@
 
 <script>
 export default {
-  data() {
+  data () {
     return {
       meta: {
         title: '固定されたツイート',
@@ -92,7 +92,7 @@ export default {
       show: false
     }
   },
-  head() {
+  head () {
     return {
       title: this.meta.title,
       meta: [
@@ -107,7 +107,7 @@ export default {
     }
   },
   methods: {
-    copyTag(tagstr) {
+    copyTag (tagstr) {
       navigator.clipboard.writeText(tagstr)
       // this.show = true
     }

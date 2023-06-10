@@ -1,0 +1,19 @@
+{
+    "id": "null",
+    "title": "404 Not Found!",
+    "description": "No post-query!",
+    "type": "article",
+    "url": "https://mitori.me/post",
+    "path": "./post",
+    "image": "/img/noimage.png",
+    "absimage": "https://raw.githubusercontent.com/kdmch/blog/master/static/img/noimage.png",
+    "comments": false,
+    "relateds": false,
+    "updated": "20xx.xx.xx",
+    "tags": [],
+    "auther": "mitori",
+    "authericon": "/icons/mitori.png",
+    "twitter": "https://twitter.com/mitorime",
+    "bio": "はよ作業せい",
+    "articles": []
+}

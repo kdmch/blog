@@ -4,8 +4,8 @@
       <v-img :src="require('../assets/mitorime.png')" id="logo" />
     </nuxt-link>
     <div class="theme-desc">
-      <v-icon color="#ffffff">mdi-rabbit</v-icon>
-      <div class="theme-msg">dying wip.</div>
+      <v-icon small color="#ffffff">mdi-tag</v-icon>
+      <div class="theme-msg">タグ検索実装しました</div>
     </div>
   </div>
 </template>
@@ -34,10 +34,11 @@ export default {
     .theme-desc {
       margin-right: 24px;
       display: flex;
-      gap: 16px;
+      gap: 8px;
       .theme-msg {
+        font-family: 'Zen Kaku Gothic New', sans-serif;
+        font-size: 12px;
         color: #ffffff;
-        font-weight: bold;
         display: inline-flex;
         align-items: center;
       }

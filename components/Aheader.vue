@@ -5,7 +5,8 @@
     <div class="eyecatch wmax">
       <v-img :src="caps.image" class="eyecatchimage"/>
       <div class="date front txpink">
-        {{ caps.updated }}
+        <v-icon color="#dd5b9c" class="icon"> mdi-calendar-month </v-icon>
+        <span>{{ caps.updated }}</span>
       </div>
     </div>
     <div class="meta-info front wmax">
@@ -13,9 +14,9 @@
         {{ caps.title }}
       </div>
       <div class="tags txpink">
-        <div v-for="tag in caps.tags" :key="tag" class="tag">
+        <nuxt-link :to="`./tag?q=${tag}`" v-for="tag in caps.tags" :key="tag" class="tags">
           #{{ tag }}
-        </div>
+        </nuxt-link>
       </div>
       <div class="information">
         <div class="autherinfo">
@@ -23,13 +24,9 @@
           <div class="auther txblack">
             {{ caps.auther }}
           </div>
-          <div class="icon">
-            <a :href="caps.twitter">
-              <v-icon color="#1da1f2" size="24px">
-                mdi-twitter
-              </v-icon>
-            </a>
-          </div>
+          <a :href="caps.twitter">
+            <v-icon color="#1da1f2"> mdi-twitter </v-icon>
+          </a>
         </div>
         <div class="description txgrey">
           {{ caps.description }}
@@ -43,13 +40,13 @@
 <script>
 export default {
   props: ['caps'],
-  data() {
+  data () {
     return {
       suffix: ' - ミトリメ'
     }
   },
   methods: {
-    twitterShare() {
+    twitterShare () {
       const intentUrl = 'https://twitter.com/intent/tweet?'
       const text = ['text', this.caps.title + this.suffix + '\n']
       const url = ['url', this.caps.url]
@@ -67,6 +64,7 @@ export default {
 #wrapper {
   width: 100%;
   display: flex;
+  font-family: 'Zen Kaku Gothic New', sans-serif;
   justify-content: center;
   .bgrect {
     position: absolute;
@@ -89,24 +87,32 @@ export default {
       .eyecatchimage {
         max-width: 720px;
         border-radius: 16px;
+        transition: transform 0.2s ease;
+        &:hover {
+          transform: scale(1.008) rotate(-0.3deg);
+        }
       }
       .date {
         text-align: right;
-        font-family: 'Dela Gothic One';
+        font-weight: bold;
         font-size: 20px;
       }
     }
     .meta-info {
       padding: 0 48px;
       #title {
-        font-family: 'Dela Gothic One';
+        font-weight: bold;
         font-size: 36px;
       }
       .tags {
         display: flex;
-        font-family: 'Dela Gothic One';
+        font-weight: bold;
+        color: $grey;
         font-size: 18px;
         gap: 12px;
+        &:hover {
+          color: $pink;
+        }
       }
       .information {
         margin-top: 20px;
@@ -119,17 +125,20 @@ export default {
           display: flex;
           gap: 20px;
           .authericon {
-            border-radius: 100%;
+            border-radius: 50%;
+            transition: 0.2s ease;
+            &:hover {
+              transform: rotate(-10deg);
+              border-radius: 25%;
+            }
           }
           .auther {
-            margin-top: 4px;
-            font-family: 'Dela Gothic One';
+            font-weight: bold;
             font-size: 20px;
           }
         }
         .description {
           text-align: right;
-          font-family: sans-serif;
           font-size: 16px;
         }
       }
@@ -138,6 +147,7 @@ export default {
   .icon {
     display: inline-flex;
     align-items: center;
+    margin-top: -3px;
   }
   .front {
     position: relative;

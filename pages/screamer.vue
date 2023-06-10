@@ -11,7 +11,7 @@
 
 <script>
 export default {
-  data() {
+  data () {
     return {
       meta: {
         title: '叫ぶやつ | ミトリメ',
@@ -22,7 +22,7 @@ export default {
       }
     }
   },
-  head() {
+  head () {
     return {
       title: this.meta.title,
       meta: [
@@ -37,7 +37,7 @@ export default {
     }
   },
   methods: {
-    screamer(screamLength) {
+    screamer (screamLength) {
       let screamNum = String((Math.floor(Math.random() * 2)) * 3)
       let screamStr = '√'
       const screamLetter = ['﹀', '︺', '▔', '^', '︿', '︹', '▁', '_', '/', '╱', '⎰', 'ʃ', '\\', '╲', '⎱', 'ʅ']

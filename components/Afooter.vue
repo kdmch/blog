@@ -25,21 +25,24 @@
       <div class="center front w1280">
         <div :v-show="caps.comments == true">
           <div class="capt">
-            <div class="emp txgrey">コメントを書く</div>
-            <div class="ruler bggrey" />
+            <div class="emp txgrey tsgrey">コメントを書く</div>
+            <div class="ruler bggrey bsgrey" />
           </div>
           <Disqus class="disqus center w960" />
         </div>
         <div :v-if="caps.relateds">
           <div class="capt">
-            <div class="emp txpink">関連記事</div>
-            <div class="ruler bgpink" />
+            <div class="emp txpink tspink">関連記事</div>
+            <div class="ruler bgpink bspink" />
           </div>
           <div class="relateds center w960">
-            <nuxt-link :to="article.url" v-for="article in caps.articles" :key="article.no" tag="div" class="articlewrapper bgpink">
-              <v-img :src="article.image" class="articleimg" />
+            <nuxt-link :to="ra.path" v-for="ra in importedArticle" :key="ra.no" tag="div" class="articlewrapper bgpink bspink">
+              <v-img :src="ra.image" class="articleimg" />
               <div class="articletitle txwhite">
-              {{ article.title }}
+                {{ ra.title }}
+              </div>
+              <div class="articledesc">
+                {{ ra.description }}
               </div>
             </nuxt-link>
           </div>
@@ -52,13 +55,21 @@
 <script>
 export default {
   props: ['caps'],
-  data() {
+  created () {
+    const postsData = require('~/assets/posts.json')
+    for (let i = 0; i < this.caps.articles.length; i++) {
+      this.importedArticle[i] = postsData[this.caps.articles[i]]
+      this.importedArticle[i].no = i
+    }
+  },
+  data () {
     return {
+      importedArticle: [],
       suffix: ' - ミトリメ'
     }
   },
   methods: {
-    twitterShare() {
+    twitterShare () {
       const intentUrl = 'https://twitter.com/intent/tweet?'
       const text = ['text', this.caps.title + this.suffix + '\n']
       const url = ['url', this.caps.url]
@@ -74,6 +85,7 @@ export default {
 @import "assets/cssvar.scss";
 
 #wrapper {
+  font-family: 'Zen Kaku Gothic New', sans-serif;
   margin-top: 32px;
   .twittershare {
     margin: 32px auto 64px;
@@ -84,6 +96,11 @@ export default {
     padding: 12px 16px;
     background-color: #1da1f2;
     border-radius: 12px;
+    box-shadow: 0px 0px 20px #1da1f288;
+    transition: 0.2s ease;
+    &:hover {
+      transform: scale(1.03);
+    }
     .twittercap {
       margin-left: 8px;
       font-size: 14px;
@@ -98,7 +115,7 @@ export default {
     gap: 16px;
     .writtenby {
       margin-top: 4px;
-      font-family: "Dela Gothic One";
+      font-weight: bold;
       font-size: 20px;
     }
     .authericon {
@@ -110,11 +127,10 @@ export default {
       .auther {
         display: flex;
         gap: 12px;
-        font-family: "Dela Gothic One";
+        font-weight: bold;
         font-size: 20px;
       }
       .bio {
-        font-family: sans-serif;
         font-size: 12px;
       }
     }
@@ -128,15 +144,25 @@ export default {
     flex-wrap: wrap;
     gap: 24px;
     .articlewrapper {
-      width: 210px;
+      flex: 1;
+      max-width: 400px;
+      min-width: 200px;
       border-radius: 8px;
+      transition: transform 0.2s ease;
+      &:hover {
+        transform: scale(1.01) rotate(-0.3deg);
+      }
       .articleimg {
         border-radius: 8px;
       }
       .articletitle {
         font-weight: bold;
-        padding: 12px;
-        height: 80px;
+        font-size: 20px;
+        padding: 12px 12px 3px;
+      }
+      .articledesc {
+        color: $white;
+        padding: 3px 12px 12px;
       }
     }
   }
@@ -151,7 +177,7 @@ export default {
     align-items: center;
   }
   .emp {
-    font-family: "Dela Gothic One";
+    font-weight: bold;
     font-size: 36px;
   }
   .ruler {

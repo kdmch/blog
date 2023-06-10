@@ -7,7 +7,7 @@
 
 <script>
 export default {
-  mounted() {
+  mounted () {
     window.location.href = 'https://twitter.com/mitorime'
   }
 }
