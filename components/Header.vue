@@ -1,5 +1,5 @@
 <template>
-  <div id="headwrapper">
+  <div id="headwrapper" class="bgpink">
     <div id="header">
       <nuxt-link to="./">
         <v-img :src="require('../assets/mitorime.png')" id="logo" />
@@ -22,6 +22,7 @@ export default {
 @import "assets/cssvar.scss";
 
 #headwrapper {
+  background-color: $pink;
   #header {
     position: fixed;
     z-index: 1;
