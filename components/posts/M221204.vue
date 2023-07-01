@@ -22,7 +22,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @import "assets/textmp.scss";
 @import "assets/article.scss";
 </style>

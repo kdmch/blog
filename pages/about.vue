@@ -42,15 +42,9 @@
               <div>いただいた写真は手元で大切に保管してます。毎度ありがとうございます……</div>
               <br>
               <div><v-icon small color="#1995e0" class="icon">mdi-brush</v-icon>絵やら曲やらをたまーに上げますが</div>
-              <div>著作権ほぼ放棄でやってるので、素材にするのもAI学習も無断転載もそのまま複製して売るのも完全OK！あなたのものです。自由にしてください！</div>
-              <v-row class="cap-container">
-                <a href="https://elaws.e-gov.go.jp/document?lawid=345AC0000000048" target="_blank" rel="noopener noreferrer">
-                  <div class="cap-normal shadow">
-                    <div><v-icon small color="#c10600" class="icon">mdi-alert</v-icon><b>&nbsp;自作発言と、誰かを攻撃する目的では使用しないでね！</b></div>
-                    <div>また、ごく稀にコスプレ写真が上がりますが、<b>こちらは転載不可です！著作権ってだいじ！</b></div>
-                  </div>
-                </a>
-              </v-row>
+              <div>わたしの著作物のうち、アイコンと顔面以外のコンテンツは、<b>政治的・宗教的・特定個人/団体に加害的でないかぎり</b>、すべて自由に使用できます！そのまま売るとかも全然OKです。連絡も必要ありません。
+                <span><a href="https://raw.githubusercontent.com/kdmch/blog/main/LICENSE.md" target="_blank" rel="noopener noreferrer" class="twlink">ちゃんと知る<v-icon small color="#1995e0" class="icon">mdi-open-in-new</v-icon></a></span>
+              </div>
               <br>
               <div><v-icon small color="#1995e0" class="icon">mdi-link-variant</v-icon>その他リンク</div>
               <div><a href="https://mitori.me" target="_blank" rel="noopener noreferrer" class="twlink"><v-icon small color="#1995e0" class="icon">mdi-web</v-icon>blog: ミトリメ(mitori.me)&nbsp;<v-icon small color="#1995e0" class="icon">mdi-open-in-new</v-icon></a></div>
