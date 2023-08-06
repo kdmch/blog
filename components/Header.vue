@@ -22,7 +22,6 @@ export default {
 @import "assets/cssvar.scss";
 
 #headwrapper {
-  background-color: $pink;
   #header {
     position: fixed;
     z-index: 1;

@@ -112,5 +112,24 @@
     "twitter": "https://twitter.com/mitorime",
     "bio": "元気",
     "articles": ["221212"]
+  },
+  "230806": {
+    "id": "230806",
+    "title": "ボカコレに出た",
+    "description": "出た。",
+    "type": "article",
+    "url": "https://mitori.me/230806",
+    "path": "./post?p=230806",
+    "image": "/img/thumbnails/230806.png",
+    "absimage": "https://raw.githubusercontent.com/kdmch/blog/master/static/img/thumbnails/230806.png",
+    "comments": true,
+    "relateds": true,
+    "updated": "2023.08.06",
+    "tags": ["日記", "創作"],
+    "auther": "mitori",
+    "authericon": "/icons/mitori.png",
+    "twitter": "https://twitter.com/mitorime",
+    "bio": "元気",
+    "articles": ["221204"]
   }
 }
