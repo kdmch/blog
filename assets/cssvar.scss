@@ -10,15 +10,6 @@ $white: #e8f2f5;
 $grey: #9b9dbb;
 $palegrey: #d6dae5;
 
-@media (prefers-color-scheme: dark) {
-  $bgblack: #2c3049;
-  $txblack: #e8f2f5;
-  $pink: #dd5b9c;
-  $white: #3d4054;
-  $grey: #d6dae5;
-  $palegrey: #9b9dbb;
-}
-
 .txwhite {
   color: $white;
 }
