@@ -18,8 +18,6 @@
     <p>デバッグも兼ねてプレーヤーを置いてみます！！</p>
     <script type="application/javascript" src="https://embed.nicovideo.jp/watch/sm42574754/script?w=640&h=360"></script><noscript><a href="https://www.nicovideo.jp/watch/sm42574754">水没 feat. GUMI</a></noscript>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/iTJTzRekGAg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    <div class="separator" />
-    <p>がんばります。</p>
   </div>
 </template>
 

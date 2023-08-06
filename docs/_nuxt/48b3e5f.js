@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[21],{538:function(t,n,o){"use strict";o.r(n);var e=o(427),r={mounted:function(){window.location.href="https://twitter.com/mitorime"}},c=o(72),component=Object(c.a)(r,(function(){var t=this._self._c;return t(e.a,[t("div",{attrs:{id:"main"}})])}),[],!1,null,"51ff5222",null);n.default=component.exports}}]);
